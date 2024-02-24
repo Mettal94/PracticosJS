@@ -3,7 +3,7 @@ function validar(){
     let mensaje = document.getElementById("validacion");
     if(isNaN(num) || num < 1 || num > 100){
         mensaje.innerHTML = "Dato no válido"
-        return false;
+        return true;
     }else{
         mensaje.innerHTML = "Ingreso correcto"
         return false;
