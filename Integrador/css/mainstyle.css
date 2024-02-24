@@ -1,14 +1,17 @@
+body{
+    background-color: #fef0d5;
+    display: flex;
+    flex-direction: column;
+}
 #header {
     background-color: orange;
     padding: 10px;
     border-radius: 40px;  
-    width: 100%;
+    width: 95%;
 }
 
 #header div {
     display: inline-block;
-   /* border-radius: 10px;
-    background-color: orange;*/
     margin: 5px;
 }
 
@@ -27,12 +30,23 @@
     border-radius: 10px; 
 }
 
+#contenido{
+    flex:1;
+}
+
 #footer {
     background-color:blue;
     padding: 10px;
-    display: flex;
-    position: sticky;
+    position: fixed;
+    bottom: 0;
     color: #FFFFFF;
-    bottom: 0px;
     width: 100%;
+}
+
+@media screen and (max-width:550px) {
+    #header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
