@@ -1,0 +1,14 @@
+div{
+    display: block;
+    justify-content: left;
+    align-items: flex-start;
+    width: 150px;    
+}
+.blanco{
+    background-color: aliceblue;
+    color: black;    
+}
+.negro{
+    background-color: black;
+    color: white;
+}
