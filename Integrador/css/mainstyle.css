@@ -8,6 +8,10 @@ body{
     padding: 10px;
     border-radius: 40px;  
     width: 95%;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 #header div {

@@ -6,6 +6,6 @@ function validar(){
         return false;
     }else{
         mensaje.innerHTML = "Ingreso correcto"
-        return false;
+        return true;
     }
 }
