@@ -10,6 +10,7 @@ for (var i = 1; i <= 144; i += 16) {
         if (imgNumber === 73) {
             img.addEventListener("mouseenter", function () {
                 this.src = "img/imágenes/wally.gif";
+            document.getElementById("tiempo").textContent = "✔";
                 detenerCronometro()
             });
             img.addEventListener("mouseleave", function () {
@@ -30,16 +31,12 @@ var cronometro = setInterval(function (){
     if(timer-1>0){
         document.getElementById("tiempo").textContent = timer-1;}
         else{
-            document.getElementById("tiempo").textContent = "!!!";
+            document.getElementById("tiempo").textContent = "‼";
             detenerCronometro()
         }
 }, 1000);
 
 function detenerCronometro(){
     clearInterval(cronometro);
-    document.getElementById("img73").src =  "img/imágenes/wally.gif";
-    var img73 = document.getElementById("img73");
-    var wally = img73.cloneNode(true);
-    img73.parentNode.replaceChild(wally, img73);
 }
         
