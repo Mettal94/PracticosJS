@@ -11,6 +11,27 @@
     <script src="script.js"></script>
 </head>
 <body>
-    
+    <div class="calculadora">
+        <input type="text" class="pantalla" id="pantalla" disabled>
+        <div class="teclas">
+          <button id="numero" onclick="pantalla('7')">7</button>
+          <button id="numero" onclick="pantalla('8')">8</button>
+          <button id="numero" onclick="pantalla('9')">9</button>
+          <button id="operacion" onclick="pantalla('+')">+</button>
+          <button id="numero" onclick="pantalla('4')">4</button>
+          <button id="numero" onclick="pantalla('5')">5</button>
+          <button id="numero" onclick="pantalla('6')">6</button>
+          <button id="operacion"onclick="pantalla('-')">-</button>
+          <button id="numero" onclick="pantalla('1')">1</button>
+          <button id="numero" onclick="pantalla('2')">2</button>
+          <button id="numero" onclick="pantalla('3')">3</button>
+          <button id="operacion"onclick="pantalla('*')">*</button>
+          <button id="numero" onclick="pantalla('0')">0</button>
+          <button id="limpiar" onclick="limpiar()">C</button>
+          <button id="calcular" onclick="calcular()">=</button>
+          <button id="operacion" onclick="pantalla('/')">/</button>
+        </div>
+      </div>
+      <script src="script.js"></script>
 </body>
 </html>

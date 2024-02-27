@@ -1,0 +1,32 @@
+body {
+    background-color: antiquewhite;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.fila img {
+    width: 100%;
+}
+
+.tiempo{
+    display:inline;
+    justify-content: space-between;
+}
+
+p {
+    color: cadetblue;
+    font-weight: bold;
+    font-size: 48px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    color: red;
+}
