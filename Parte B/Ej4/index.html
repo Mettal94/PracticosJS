@@ -11,9 +11,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
-    
+    <div id="contenedor">   
+        <h1>CD de música</h1>
+        <button id="nueva">Nueva canción</button>
+        <div id="carga">
+            <p id="error"></p>
+        </div>
+        <h3>Listado de canciones</h3>
+        <table>
+            <thead>
+                <tr>    
+                    <th>Nombre</th>
+                    <th>Compositor</th>
+                    <th>Duracion</th>
+                </tr>    
+            </thead>
+            <tbody id="cuerpo">
+            </tbody>
+        </table>
+    </div>     
 </body>
 </html>
