@@ -1,5 +1,13 @@
 body {
     background-color: antiquewhite;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor {
+    width: 859px;
 }
 
 .fila {
@@ -9,9 +17,8 @@ body {
 }
 
 .fila img {
-    width: 75%;
+    width: 100%;
 }
-
 
 p {
     color: cadetblue;
@@ -19,8 +26,7 @@ p {
     font-size: 48px;
     margin-top: 0px;
     margin-bottom: 5px;
-    display: flex;
-    justify-content: center;
+    text-align: center; /* Center align text */
 }
 
 span {
