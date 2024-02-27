@@ -45,14 +45,16 @@ function agregarCancion(){
     let patronTiempo = /^\d+(:)\d\d$/;
     
     try{
-       
-        if(!patronTiempo.test(duracion)){
-            throw "Tiempo ingresado no válido";
+        if(nombre && compositor && duracion){
+            if(!patronTiempo.test(duracion)){
+                throw "Tiempo ingresado no válido";
+            }else{
+                let tiempo = duracion.trim().split(":");
+                if(tiempo[tiempo.length - 1] > 60) throw "Los minutos no deben ser superiores a 60";
+            }
         }else{
-            let tiempo = duracion.trim().split(":");
-            if(tiempo[tiempo.length - 1] > 60) throw "Los minutos no deben ser superiores a 60";
+            throw "No deben quedar campos vacíos";
         }
-        
     }catch(err){
         mensaje.style = "font-color:red";
         mensaje.innerHTML = err;

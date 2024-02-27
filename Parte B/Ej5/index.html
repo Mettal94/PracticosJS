@@ -1,8 +1,11 @@
 <!--
-    5) Realice una página donde el usuario pueda cargar un contacto. El contacto de esa persona debe tener al menos un teléfono y como máximo 3. Además debe ser obligatoria la carga del mail. Realice las validaciones necesarias.
+    5) Realice una página donde el usuario pueda cargar un contacto. 
+    El contacto de esa persona debe tener al menos un teléfono y como máximo 3. 
+    Además debe ser obligatoria la carga del mail. Realice las validaciones necesarias.
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +14,23 @@
     <script src="script.js"></script>
 </head>
 <body>
-    
+    <div>    
+        <form action="#" name="contacto">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre">
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido">
+            <label for="tel1">Telefono 1</label>
+            <input type="text" name="tel1">
+            <label for="tel2">Telefono 2 (Opcional)</label>
+            <input type="text" name="tel2">
+            <label for="tel3">Telefono 3 (Opcional)</label>
+            <input type="text" name="tel3">
+            <label for="correo">E-Mail</label>
+            <input type="text" name="correo">
+            <button type="button" id="guardado">Guardar contacto</button>
+        </form>
+    </div>     
 </body>
+
 </html>
