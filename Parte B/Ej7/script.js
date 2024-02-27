@@ -10,11 +10,11 @@ function convertir(){
         if(dolar){
             conversion=num/1376;
             conversion= conversion.toFixed(2,conversion)
-            mensaje.innerHTML = num+" pesos equivalen a : "+conversion+" dolares."
+            mensaje.innerHTML = num+" pesos equivalen a : "+conversion+" de dólares."
         }else if(peso){
             conversion=num*1376;
             conversion= conversion.toFixed(2,conversion)
-            mensaje.innerHTML = num+" dolares equivalen a : "+conversion+" pesos."
+            mensaje.innerHTML = num+" dólares equivalen a : "+conversion+" de pesos."
         }else{
             mensaje.innerHTML = "Seleccione una divisa antes de la conversión.";
         }

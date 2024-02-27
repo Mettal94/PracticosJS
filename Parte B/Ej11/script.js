@@ -31,14 +31,15 @@ var cronometro = setInterval(function (){
         document.getElementById("tiempo").textContent = timer-1;}
         else{
             document.getElementById("tiempo").textContent = "!!!";
-            document.getElementById("img73").src =  "img/imágenes/wally.gif";
-            var img73 = document.getElementById("img73");
-            var wally = img73.cloneNode(true);
-            img73.parentNode.replaceChild(wally, img73);
+            detenerCronometro()
         }
 }, 1000);
 
 function detenerCronometro(){
     clearInterval(cronometro);
+    document.getElementById("img73").src =  "img/imágenes/wally.gif";
+    var img73 = document.getElementById("img73");
+    var wally = img73.cloneNode(true);
+    img73.parentNode.replaceChild(wally, img73);
 }
         
