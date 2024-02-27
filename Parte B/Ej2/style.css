@@ -11,12 +11,11 @@ div {
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
+    display: inline;
+    padding-bottom: 15px;
 }
 
-input[type="text"],
-input[type="date"] {
+input[type="text"], input[type="date"] {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -45,4 +44,10 @@ input[type="button"]:hover {
 #valido {
     margin-top: 10px;
     font-weight: bold;
+}
+
+#fecha{
+display: block;
+padding-top: 20px;
+margin-bottom: -5px;
 }
