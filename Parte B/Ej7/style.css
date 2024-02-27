@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightgray;
+    font-weight: bolder;
+    text-align: center;
+}
+#num,#dolar,#peso{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: green;
+    color: antiquewhite;
+}

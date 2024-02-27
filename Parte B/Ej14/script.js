@@ -1,23 +1,20 @@
-function convertir(){
-    let num = parseInt(document.getElementById("num").value);
-    let mensaje = document.getElementById("Conversor");
-    let dolar = document.getElementById("dolar").checked;
-    let peso = document.getElementById("peso").checked;
-   
-    if(isNaN(num)){
-        mensaje.innerHTML = "Ingrese un número válido a convertir."
-    }else{
-        if(dolar){
-            conversion=num/1376;
-            conversion= conversion.toFixed(2,conversion)
-            mensaje.innerHTML = num+" pesos equivalen a : "+conversion+" dolares."
-        }else if(peso){
-            conversion=num*1376;
-            conversion= conversion.toFixed(2,conversion)
-            mensaje.innerHTML = num+" dolares equivalen a : "+conversion+" pesos."
-        }else{
-            mensaje.innerHTML = "Seleccione una divisa antes de la conversión.";
-        }
-    }
+function validar(){
+    let form = document.forms["login"]
+    let user = form.user.value;
+    let pass = form.pass.value;
+    var patronu = /^[A-Z].*[0-9].*[0-9].*[0-9].{0,4}$/;
+    var patronp = /^[0-9].*[A-Z].*[0-9]$/;
+    var usertest = patronu.test(user);
+    var passtest = patronp.test(pass);
+
+
+    if(usertest && passtest){
     return true;
-}
+    }else{
+        document.getElementById("error").innerHTML = "Usuario y contraseña incorrectos.";
+        setTimeout(function() {
+            document.getElementById("error").innerHTML = "";
+        }, 1000);
+        return false;
+    }
+  }

@@ -1,19 +1,33 @@
-body{
+body {
+    background-color: antiquewhite;
+}
+
+p{
+    color: cadetblue;
+    font-weight: bold;
+    font-size: 48px;
+    margin-top: 0px;
+    margin-bottom: 5px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: lightgray;
-    font-weight: bolder;
-    text-align: center;
 }
-#num,#dolar,#peso{
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+label{
+    color: cadetblue;
+    font-weight: bold;
+    font-size: 16px;
 }
+
+span {
+    color: red;
+}
+
+#error {
+    color: red;
+    font-size: 16px;
+    justify-content: left;
+    margin-top: 5px;
+}
+
 button{
     margin-top: 10px;
-    margin-bottom: 20px;
-    background-color: green;
-    color: antiquewhite;
 }

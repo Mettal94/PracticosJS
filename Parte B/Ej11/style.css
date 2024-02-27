@@ -9,13 +9,9 @@ body {
 }
 
 .fila img {
-    width: 100%;
+    width: 75%;
 }
 
-.tiempo{
-    display:inline;
-    justify-content: space-between;
-}
 
 p {
     color: cadetblue;
@@ -29,4 +25,23 @@ p {
 
 span {
     color: red;
+}
+
+h6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h6 span {
+    background-color: azure;
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50%;
+    border: 10px double red;
 }

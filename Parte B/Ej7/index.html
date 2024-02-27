@@ -2,15 +2,25 @@
     7) Realiza una página que muestre un formulario para la conversión de Pesos a Dólares y viceversa. Los campos del formulario han de poder ser limpiados.
 -->
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 1</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <form action="#" method="post">
+        <h1>Conversor de divisas</h1>
+        <input type="text" name="num" id="num"> <br>
+        <label>Convertir a:</label><br>
+        <input type="radio" id="dolar" name="divisa" value="dolar">
+        <label for="dolar">Dólares</label><br>
+        <input type="radio" id="peso" name="divisa" value="peso">
+        <label for="peso">Pesos</label><br>
+        <button type="button" onclick="convertir()">Convertir </button>
+        <p id="Conversor">&nbsp;</p>
+    </form>
 </body>
 </html>
