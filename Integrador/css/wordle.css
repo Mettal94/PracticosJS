@@ -10,6 +10,7 @@ h2{
 }
 #ImagenPJ{
     margin-top: 10px;
+    border-radius: 50%;
 }
 
 #Dragondle{
@@ -28,44 +29,47 @@ h2{
     justify-content: center;
     align-items: center; 
 }
-#letra{
-    display: inline;
+#letra {
+    display: inline-block;
     background-color: white;
-    border-color: black;
-    border-style:groove;
+    border: 2px groove black;
     border-radius: 20%;
     color: black;
     font-size: 32px;
-    padding-left: 8px;
-    padding-right: 7px;
-    margin-left: 5px;
-    margin-right: 5px;
+    padding: 0;
+    margin: 0 5px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
 }
 
 #letraPosible{
-    display: inline;
+    display: inline-block;
     background-color: rgb(255, 255, 0);
-    border-color: black;
-    border-style:groove;
+    border: 2px groove black;
     border-radius: 20%;
     color: black;
     font-size: 32px;
-    padding-left: 8px;
-    padding-right: 7px;
-    margin-left: 5px;
-    margin-right: 5px;
+    padding: 0;
+    margin: 0 5px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
 }
 
 #letraCorrecta{
-    display: inline;
+    display: inline-block;
     background-color: rgb(0, 255, 0);
-    border-color: black;
-    border-style:groove;
+    border: 2px groove black;
     border-radius: 20%;
     color: black;
     font-size: 32px;
-    padding-left: 8px;
-    padding-right: 7px;
-    margin-left: 5px;
-    margin-right: 5px;
+    padding: 0;
+    margin: 0 5px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
 }
