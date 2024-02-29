@@ -4,9 +4,9 @@ goku.addEventListener("mouseover",transformar)
 goku.addEventListener("mouseout",resetear)
 
 function transformar(evento){
-goku.src = "gif goku/GokuSSJ.png";
+goku.src = "img/gifgoku/GokuSSJ.png";
 }
 
 function resetear(){
-    goku.src = "gif goku/Goku.gif";
+    goku.src = "img/gifgoku/Goku.gif";
 }

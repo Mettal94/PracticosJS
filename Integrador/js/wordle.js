@@ -47,10 +47,11 @@ console.log(nombrepjRandom);
 function terminarJuego(){
     var nombrePJ = document.getElementById("NombrePJ");
     var imagenPJ = document.getElementById("ImagenPJ");
-    var descripciónPJ = document.getElementById("DescripciónPJ");
+    var descripciónPJ = document.getElementById("descripcionPJ");
     nombrePJ.innerText = pjRandom.nombre;
     imagenPJ.src = pjRandom.imagen;
-    descripciónPJ = pjRandom.descripcion;
+    descripciónPJ.innerText = pjRandom.descripcion;
+
     var nombreInput = document.getElementById("nombre");
     var boton = document.getElementById("boton");
     nombreInput.disabled = true;
