@@ -34,6 +34,8 @@ const listaPersonajes = [
     { nombre: "JIREN", descripcion: "Miembro de las tropas del orgullo.", imagen: "img/dragondle/JIREN.png" },
     { nombre: "BASIL", descripcion: "Miembro del trio del peligro.", imagen: "img/dragondle/BASIL.png" },
     { nombre: "BILLS", descripcion: "Dios de la Destrucción.", imagen: "img/dragondle/BILLS.png" },
+    { nombre: "BROLY", descripcion: "El Super Saiyan Legendario.", imagen: "img/dragondle/BROLY.png" },
+    { nombre: "TOPPO", descripcion: "Miembro de las tropas del orgullo.", imagen: "img/dragondle/TOPPO.png" },
     { nombre: "FROST", descripcion: "Combatiente del 6to universo.", imagen: "img/dragondle/FROST.png" }
 ];
 
@@ -43,7 +45,6 @@ let nombrepjRandom = pjRandom.nombre;
 console.log(nombrepjRandom);
 
 function terminarJuego(){
-    console.log("JUEGO TERMINADO");
     var nombrePJ = document.getElementById("NombrePJ");
     var imagenPJ = document.getElementById("ImagenPJ");
     var descripciónPJ = document.getElementById("DescripciónPJ");
@@ -63,7 +64,10 @@ function enviarPersonaje() {
         introducirPersonaje();
     } else {
         let error = document.getElementById("error");
-        error.innerHTML = "ESCRIBA EL NOMBRE DEL PERSONAJE CORRECTAMENTE"
+        error.innerHTML = "Escriba el nombre del personaje correctamente"
+        setTimeout(function() {
+            error.innerHTML = "";
+        }, 2000);
     }
 }
 
