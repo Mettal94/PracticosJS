@@ -17,6 +17,5 @@ function validar(){
         mensaje.innerHTML = err;
         return false;
     }
-    mensaje.innerHTML = "Informacion recibida, gracias!!"
     return true;
 }
