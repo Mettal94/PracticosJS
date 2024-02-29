@@ -1,4 +1,9 @@
-body{
+@font-face {
+    font-family: "Saiyan Sans";
+    src: url("../font/SS.ttf") format("trueType");
+  }
+  
+  body{
     background-color: #fef0d5;
     display: flex;
     flex-direction: column;
@@ -45,6 +50,16 @@ body{
     bottom: 0;
     color: #FFFFFF;
     width: 100%;
+}
+
+h1{
+
+    color:red;
+    font-family: "Saiyan Sans";
+    font-size: 48px;
+    font-weight: lighter;
+    font-stretch:extra-expanded;
+    font-style: italic;
 }
 
 @media screen and (max-width:550px) {
