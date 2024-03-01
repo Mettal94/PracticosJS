@@ -4,9 +4,13 @@
   }
   
   body{
-    background-color: #fef0d5;
-    display: flex;
-    flex-direction: column;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
 }
 #header {
     background-color: orange;
@@ -44,6 +48,9 @@
     margin-bottom: 60px;
 }
 
+#espaciado{
+    padding: 30px;
+}
 
 #footer {
     background-color: #0d1117;
