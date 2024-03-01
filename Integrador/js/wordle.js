@@ -36,14 +36,24 @@ const listaPersonajes = [
     { nombre: "BILLS", descripcion: "Dios de la Destrucción.", imagen: "img/dragondle/BILLS.png" },
     { nombre: "BROLY", descripcion: "El Super Saiyan Legendario.", imagen: "img/dragondle/BROLY.png" },
     { nombre: "TOPPO", descripcion: "Miembro de las tropas del orgullo.", imagen: "img/dragondle/TOPPO.png" },
+    { nombre: "CHAOS", descripcion: "Alumno de la escuela de la grulla.", imagen: "img/dragondle/CHAOS.png" },
     { nombre: "FROST", descripcion: "Combatiente del 6to universo.", imagen: "img/dragondle/FROST.png" }
 ];
-
+//eligiendo un personaje del arreglo y iniciando intentos.
 let aleatorio = Math.floor(Math.random() * listaPersonajes.length);
 let pjRandom = listaPersonajes[aleatorio];
 let nombrepjRandom = pjRandom.nombre;
-console.log(nombrepjRandom);
+let intentos = 0;
 
+//asignando el botón enter al botón
+document.getElementById('nombre').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      enviarPersonaje(); // Llama a la función del botón
+    }
+  });
+
+//funcion para terminar el juego y cambiar la página    
 function terminarJuego(){
     var nombrePJ = document.getElementById("NombrePJ");
     var imagenPJ = document.getElementById("ImagenPJ");
@@ -56,13 +66,19 @@ function terminarJuego(){
     var boton = document.getElementById("boton");
     nombreInput.disabled = true;
     boton.disabled = true;
+
+    if(pjRandom.nombre="Chaos"){
+        adiosTen();
+    }
 }
 
 
 function enviarPersonaje() {
     let patron = /^[a-zA-Z]{5}$/;
     if(patron.test(document.forms["formulario"]["nombre"].value)){
+        intentos++;
         introducirPersonaje();
+
     } else {
         let error = document.getElementById("error");
         error.innerHTML = "Escriba el nombre del personaje correctamente"
@@ -179,4 +195,26 @@ function introducirPersonaje(){
         terminarJuego();
     }
 
+    if(intentos==6){
+        terminarJuego();
+    }
+}
+
+function adiosTen() {
+    // Agregar elemento <img>
+    setTimeout(function() {
+        var img = document.createElement("img");
+        img.src = "img/dragondle/adios.png";
+        img.id = "chaosExplosion";
+        juego.appendChild(img);
+
+        // Reproducir audio
+        var audio = new Audio("img/dragondle/audio.mp3");
+        audio.play();
+
+        // Recargar la página
+        setTimeout(function() {
+            location.reload();
+        }, 5000);
+    }, 3000);
 }
