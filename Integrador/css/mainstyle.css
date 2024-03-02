@@ -1,3 +1,19 @@
+body::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    border-radius: 50px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 50px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 101, 0);
+
 @font-face {
     font-family: "Saiyan Sans";
     src: url("../font/SS.ttf") format("trueType");
