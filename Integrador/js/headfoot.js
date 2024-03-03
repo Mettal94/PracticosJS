@@ -9,7 +9,7 @@ let contacto = document.createElement("div");
 inicio.innerHTML = '<a href="index.html">Inicio</a>';
 battle.innerHTML = '<a href="battle.html">Torneo</a>';
 personajes.innerHTML = '<a href="characters.html">Personajes</a>';
-quiz.innerHTML = '<a href="about.html">Quiz</a>';
+quiz.innerHTML = '<a href="quiz.html">Trivia</a>';
 contacto.innerHTML = '<a href="contact.html">Contacto</a>';
 
 header.appendChild(inicio);

@@ -4,8 +4,8 @@ const questions = [
       "Goku atravesaba mares, valles y montañas en su fiel nube voladora durante sus primeras aventuras. Eso sí, conforme aprendió a volar dejó de necesitarla. Entonces, ¿a quién regaló Goku la nube mágica al final del manga?",
     answers: [
       { txt: "A Pan, su nieta", correct: false },
-      { txt: "A Goten, su hijo menor", correct: false },
-      { txt: "A Gohan, su primogenito", correct: false },
+      { txt: "A Roshi, su maestro", correct: false },
+      { txt: "A Krillin, su mejor amigo", correct: false },
       { txt: "A Uub, la resurreccion de Buu", correct: true },
     ],
     extra:
@@ -37,7 +37,7 @@ const questions = [
   },
   {
     question:
-      "Antes de convertirse a sí mismo en un androide, el dr. Guero secuestró a dos jóvenes delincuentes con el objetivo de transformarlos en seres de poder ilimitado. ¿Cómo se llamaban originalmente los Androides A17 y A18?",
+      "Antes de convertirse a sí mismo en un androide, el Dr. Gero secuestró a dos jóvenes delincuentes con el objetivo de transformarlos en seres de poder ilimitado. ¿Cómo se llamaban originalmente los Androides A17 y A18?",
     answers: [
       { txt: "Lapis y Lazuli", correct: true },
       { txt: "Castor y Pollux", correct: false },
@@ -54,14 +54,14 @@ const questions = [
       { txt: "Apple", correct: false },
       { txt: "Nuts", correct: false },
       { txt: "Gine", correct: true },
-      { txt: "Selypar", correct: false },
+      { txt: "Celipa", correct: false },
     ],
     extra:
       "El propio Toriyama dibujó una historia corta llamada Dragon Ball Minus en la que se nos presenta a Gine, la madre de Goku. Más tarde la veríamos fugazmente en videojuegos y la gran pantalla",
   },
   {
     question:
-      "En 2008 Toei dió una grata sorpresa a los fans de Dragon Ball con ‘Dragon Ball Z: Goku y sus amigos se reúnen’. Un nuevo especial para TV en el que conocíamos al hermano de Vegeta ¿Cómo se llama ?",
+      "En 2008 Toei dió una grata sorpresa a los fans de Dragon Ball con ‘Dragon Ball Z: Goku y sus amigos se reúnen’. Un nuevo especial para TV en el que conocíamos al hermano de Vegeta ¿Cómo se llama?",
     answers: [
       { txt: "Vegeta es hijo unico", correct: false },
       { txt: "Tarble", correct: true },
@@ -73,30 +73,30 @@ const questions = [
   },
   {
     question:
-      "Cuando los saiyans con cola miran directamente a la Luna se transforman en mono gigante. Ahora bien, también es posible crear una pequeña luna capaz de igualar el efecto ¿Cuantos zenos necesita un saiyan para transformarse en Ozaru?",
+      "Cuando los saiyans con cola miran directamente a la Luna se transforman en mono gigante. Ahora bien, también es posible crear una pequeña luna capaz de igualar el efecto ¿Cuantos rayos Blutz necesita un saiyan para transformarse en Ozaru?",
     answers: [
-      { txt: "1.700 zenos", correct: false },
-      { txt: "17.000 zenos", correct: false },
-      { txt: "9.000 zenos", correct: false },
-      { txt: "Como minimo, 17 millones de zenos", correct: true },
+      { txt: "17.000 de Blutz", correct: false },
+      { txt: "1.700.000 de Blutz", correct: false },
+      { txt: "170.000 de Blutz", correct: false },
+      { txt: "17.000.000 de Blutz", correct: true },
     ],
     extra:
-      "Según Vegeta, la luz del sol reflejada en la luna necesaria para provocar la transformación debe ser de, como mínimo, 17 millones de zenos.",
+      "Según Vegeta, la luz del sol reflejada en la luna necesaria para provocar la transformación de Ozaru debe ser de, como mínimo, 17 millones de rayos Blutz.",
   },
   {
     question:
-      "¿Cuántos juegos ha desarrollado Ark System Works Basados en Dragón Ball?",
+      "La Escuela de la Grulla es una escuela de artes marciales fundada por Tsuru-Sen'nin ¿Cuál de los siguientes personajes no formó parte de la misma?",
     answers: [
-      { txt: "1, Dragon Ball FighterZ", correct: false },
-      { txt: "2, las dos entregas de Dragon Ball Xenoverse", correct: false },
-      { txt: "4, contando con la saga Supersonic Warriors", correct: true },
-      { txt: "Ninguno", correct: false },
+      { txt: "Chaos", correct: false },
+      { txt: "Tao Pai Pai", correct: false },
+      { txt: "Krillin", correct: true },
+      { txt: "Ten Shin Han", correct: false },
     ],
     extra:
-      "Los creadores de Guilty Gear han desarrollado hasta la fecha cuatro títulos de la mano de Bandai Namco.",
+      "Ten Shin Han y Chaos fueron los alumnos mas destacados de la Escuela de la Grulla, ambos abandonaron la misma luego de recapacitar sobre sus actos al enfrentar a Tao Pai Pai en el Torneo de las Artes Marciales.",
   },
   {
-    question: "¿En qué consiste el método de entrenamiento del Duende Tortuga?",
+    question: "¿En qué consiste el método de entrenamiento del Maestro Roshi?",
     answers: [
       { txt: "Moverse mucho y divertirse mucho", correct: false },
       { txt: "Estudiar mucho", correct: false },
@@ -104,16 +104,16 @@ const questions = [
       { txt: "Todas son verdaderas", correct: true },
     ],
     extra:
-      "Cuando Goku y Krilin se pusieron a entrenar con Mutenroshi, éste les hizo pasar toda clase de pruebas absurdas. Sin embargo, su base es bastante sencilla: “Moverse mucho, estudiar mucho, divertirse mucho, comer mucho y descansar mucho”",
+      "Cuando Goku y Krilin se pusieron a entrenar con el Maestro roshi, éste les hizo pasar toda clase de pruebas absurdas. Sin embargo, su base es bastante sencilla: “Moverse mucho, estudiar mucho, divertirse mucho, comer mucho y descansar mucho”",
   },
   {
     question:
       "Según registra el scouter de Vegeta antes de destruirlo ¿Cuál es el nivel de poder de Goku, sin usar el Kaio Ken,  durante su enfrentamiento con Nappa?",
     answers: [
-      { txt: "mas de 8000 unidades", correct: true },
-      { txt: "mas de 9000 unidades", correct: false },
-      { txt: "Nivel 1 de poder saiyajin", correct: false },
-      { txt: "300 kilojulios", correct: false },
+      { txt: "Mas de 8000 unidades", correct: true },
+      { txt: "Mas de 9000 unidades", correct: false },
+      { txt: "Mas de 7000 unidades", correct: false },
+      { txt: "Mas de 10000 unidades", correct: false },
     ],
     extra:
       "Pese al meme de internet, el nivel de poder que despliega Goku al enfrentarse a Nappa sobrepasa las 8.000 unidades. Una cantidad que llegaría a multiplicar por cuatro gracias al kaio-ken durante su combate con Vegeta.",
