@@ -17,5 +17,6 @@ function validar(){
         mensaje.innerHTML = err;
         return false;
     }
+    localStorage.setItem("contacto",nombre);
     return true;
 }
