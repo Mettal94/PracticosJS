@@ -12,11 +12,8 @@
     padding: 10px;
   }
   .app h1 {
-    font-weight: 25px;
-    font-weight: 600;
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
-    letter-spacing: 5px;
     text-align: center;
   }
   .quiz {
@@ -45,17 +42,24 @@
   }
   
   #next-btn {
-    background: rgba(255, 165, 0, 0.7);
-    color: #000;
-    font-weight: 500;
-    width: 150px;
-    border: 0;
+
+    background-color: #fa8b2a;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bolder;
+    text-shadow: -1px 1px white;
+    height: 42px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10%;
+    margin: 5px;
     padding: 10px;
     margin: 20px auto 0;
     border-radius: 4px;
     cursor: pointer;
     display: none;
   }
+  
   .correct {
     background: #9aeabc;
   }
