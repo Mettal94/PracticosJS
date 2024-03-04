@@ -44,7 +44,7 @@ h2 {
 }
 
 button.carta {
-  background-image: url(../img/dragondle/logo.png);
+  background-image: url(../img/card.png);
   background-size: cover;
   width: 100px;
   height: 100px;
@@ -54,7 +54,7 @@ button.carta {
 }
 
 button.carta.tapada{
-  background-image: url(../img/dragondle/logo.png);
+  background-image: url(../img/card.png);
 }
 
 .estadisticas{

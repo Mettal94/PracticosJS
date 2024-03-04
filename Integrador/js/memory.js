@@ -156,8 +156,8 @@ function destapar(id) {
             }, 750)
 
             setTimeout(() => {
-                tarjeta1.style.backgroundImage = 'url(img/dragondle/logo.png )';
-                tarjeta2.style.backgroundImage = 'url(img/dragondle/logo.png )';
+                tarjeta1.style.backgroundImage = 'url(img/card.png )';
+                tarjeta2.style.backgroundImage = 'url(img/card.png )';
                 tarjeta1.style.border = '';
                 tarjeta2.style.border = '';
                 tarjeta1.disabled = false;
