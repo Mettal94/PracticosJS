@@ -13,6 +13,8 @@ function validar(){
         if(!patronName.test(nombre)||!patronName.test(apellido)) throw "Los datos en el nombre/apellido no son correctos";
 
         if(!patronCorreo.test(correo)) throw "Correo no válido";
+
+        if(!comment) throw "Déjanos un comentario!!"
     }catch(err){
         mensaje.innerHTML = err;
         return false;

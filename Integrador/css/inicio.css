@@ -1,0 +1,10 @@
+.ocio {
+    width: 95%;
+    margin: 10px;
+    margin-left: 40px;
+    border: 2px;
+    border-color: black;
+    border-style: outset;
+    border-radius: 10px;
+    background-color:  #fa8b2a88;
+}

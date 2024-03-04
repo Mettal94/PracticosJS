@@ -6,43 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dragon Ball Z</title>
     <link rel="stylesheet" href="css/mainstyle.css">
-    <link rel="stylesheet" href="css/wordle.css">
+    <link rel="stylesheet" href="css/inicio.css">
     <link rel="icon" href="img/dragondle/logo.png" type="image/png">
 </head>
 
 <body>
     <div id="header"></div>
     <div id="contenido">
-        <div id="Dragondle">
-            <img id="ImagenPJ" src="img/dragondle/logo.png">
-            <h2 id="NombrePJ">Dragondle</h2>
-            <p id="descripcionPJ">El juego consiste en adivinar un personaje de 5 letras perteneciente al mundo de Dragon Ball.</p>
-            <button onclick="mostrarVentana()">¿Como jugar?</button><br>
-            <form name=formulario action="#" method="post">
-            <input type="text" name="nombre" id="nombre" autocomplete="off">
-            <button type="button" id="boton" onclick="enviarPersonaje()">¡Adivinar!</button>
-            </form>
-            <p id="error">&nbsp;</p>
+        <h1>Bienvenido al sitio definitivo de DBZ</h1>
+        <h2>Elige tu ocio</h2>
+        <div id="torneo" class="ocio">
+            <a href="battle.html"><img src="img/index/battle.png" alt=""></a>
+            <p>Lucha en el torneo de las artes marciales!!</p>
         </div>
-        <div id="wordle">
-    </div>
-    
-    <div id="miDiv" class="ventana-flotante">
-        <button class="cerrar" onclick="cerrarVentana()">Cerrar</button>
-        <h2>Como jugar</h2>
-        <p>&nbsp;En Dragondle tenés 6 intentos para intentar adivinar un personaje al azar de 5 carácteres perteneciente al mundo de Dragon Ball.</p>
-        <div id="juego"><span id=letra>R</span><span id=letraCorrecta>O</span><span id=letra>S</span><span id=letra>H</span><span id=letra>I</span></div>
-        <p>&nbsp;Una letra en color verde significa que el carácter está en el nombre y en su posición correcta.</p>
-        <div id="juego"><span id=letra>D</span><span id=letra>I</span><span id=letra>S</span><span id=letra>P</span><span id=letraPosible>O</span></div>
-        <p>&nbsp;Una letra en color amarillo significa que el carácter está en el nombre pero no en su posición correcta.</p>
-        <div id="juego"> <span id=letra>B</span><span id=letra>L</span><span id=letra>A</span><span id=letra>C</span><span id=letra>K</span></div>
-        <p>&nbsp;Una letra en color blanco significa que el carácter no está en el nombre.</p>
-      </div>
+        <div id="memoria" class="ocio">
+           <a href="memory.html"> <img src="img/index/memory.png" alt=""></a>
+           <p>Deberás memorizar y descubrir las parejas de personajes</p>
+        </div>
+        <div id="dragondle" class="ocio">
+            <a href="dragondle.html"><img src="img/index/wordle.png" alt=""></a>
+            <p>¿Podrás adivinar el nombre del personaje de DBZ?</p>
+        </div>
+        <div id="quiz" class="ocio">
+            <a href="quiz.html"><img src="img/index/quiz.png" alt=""></a>
+            <p>Demuestra cuánto sabes del mundo de Dragon Ball</p>
+        </div>
+        <div id="creador" class="ocio">
+            <a href="creator.html"><img src="img/index/cac.png" alt=""></a>
+            <p>Crea tu personaje!!</p>
+        </div>
     </div>
     <div id="espaciado"></div>
     <div id="footer"></div>
     <script src="js/headfoot.js"></script>
-    <script src="js/wordle.js"></script>
 </body>
 
 </html>
