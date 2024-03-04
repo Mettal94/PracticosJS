@@ -1,3 +1,4 @@
+var juegoactivo = true;
 var cartas = document.querySelectorAll('.carta');
 var iniciar = document.querySelector('#iniciar')
 var min = document.querySelector('#min')
@@ -120,6 +121,8 @@ function desordenarImagenes(array1, array2) {
 }
 
 function destapar(id) {
+
+    if(juegoactivo){
     tarjetasDestapadas++;
     if (tarjetasDestapadas == 1) {
         tarjeta1 = document.getElementById(id);
@@ -139,9 +142,10 @@ function destapar(id) {
             tarjeta1.style.border = '4px solid green';
             tarjeta2.style.border = '4px solid green';
             tarjeta1.style.cursor = 'not-allowed';
-                tarjeta2.style.cursor = 'not-allowed';
+            tarjeta2.style.cursor = 'not-allowed';
             aciertos++;
             mostrarAciertos.innerHTML = aciertos
+            juegoactivo = true;
             if(aciertos==16){
 
             }
@@ -158,8 +162,13 @@ function destapar(id) {
                 tarjeta2.style.border = '';
                 tarjeta1.disabled = false;
                 tarjeta2.disabled = false;
+                juegoactivo = true;
             }, 1500)
+            juegoactivo = false;
         }
         tarjetasDestapadas = 0;
     }
+}else{
+    
+}
 }
