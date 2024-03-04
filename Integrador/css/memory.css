@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Saiyan Sans";
+  src: url("../font/SS.ttf") format("trueType");
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: orangered;
+  font-family: "Saiyan Sans";
+  font-size: 32px;
+  font-weight: lighter;
+  font-stretch: extra-expanded;
+  font-style: italic;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#parte1 {
+  background-color: rgb(255, 165, 0, 0.3);
+  padding: 0 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  border-radius: 20px;
+}
+#parte2{
+  display: flex;
+  height: 100%;
+  padding: 20px 20px 20px 20px;
+  margin-right: 0px;
+  flex-direction: column;
+  align-self: center;
+}
+
+button.carta {
+  background-image: url(../img/dragondle/logo.png);
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button.carta.tapada{
+  background-image: url(../img/dragondle/logo.png);
+}
+
+.estadisticas{
+  border: 3px solid red;
+  width: 250px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+#iniciar{
+  background-color: #c06500;
+  color: white;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  font-size: 30px;
+  font-family: "Saiyan Sans";
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+#iniciar.disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.carta.disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+h2 #record, #contador_aciertos, #temporizador, #contador_movimientos{
+  color: #3d3935;
+}
+
+span#temporizador.poco_tiempo{
+  color: #ffd801;
+}
+
+span#temporizador.ultimos_segundos{
+  color: red;
+}
+
