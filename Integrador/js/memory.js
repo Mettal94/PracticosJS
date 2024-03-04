@@ -50,6 +50,7 @@ var imagenes = [
     "img/memorama/videl.jpg",
 ]
 var imagenesJuego = []
+var comienzo;
 
 document.addEventListener("DOMContentLoaded", iniciar_app)
 iniciar.addEventListener("click", function () {
@@ -72,7 +73,7 @@ function cronometro() {
     desbloquear_cartas()
     iniciar.disabled = true;
     iniciar.classList.add("disabled");
-    let inicio = setInterval(temporizador, 1000);
+    comienzo = setInterval(temporizador, 1000);
 }
 
 function temporizador() {
@@ -89,11 +90,11 @@ function temporizador() {
         if (min_aux == 2 && seg_aux == 50) {
             tiempo.classList.add("ultimos_segundos")
         }
-        seg.innerHTML = seg_aux;
+        seg.innerHTML = seg_aux.toString().padStart(2, "0");
         min.innerHTML = min_aux;
     } else {
-        clearInterval(inicio)
-        desbloquear_cartas();
+        clearInterval(comienzo)
+        bloquear_cartas();
     }
 }
 
@@ -147,7 +148,7 @@ function destapar(id) {
             mostrarAciertos.innerHTML = aciertos
             juegoactivo = true;
             if(aciertos==16){
-
+                clearInterval(comienzo);
             }
         } else {
             setTimeout(() => {
