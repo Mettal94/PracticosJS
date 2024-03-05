@@ -238,3 +238,7 @@ function mostrarVentana() {
     var div = document.getElementById("miDiv");
     div.style.display = "none";
   }
+
+  function reiniciarJuego() {
+    location.reload();
+  }
