@@ -164,7 +164,7 @@ function destapar(id) {
             if(aciertos==16){
                 clearInterval(comienzo);
                 window.location.href = 'ganaste.html';
-                record = min_aux + ":" + seg_aux;
+                record = min_aux + ":" + seg_aux.toString().padStart(2, "0");
                 localStorage.setItem("ultimo_record", record);
             }
         } else {
