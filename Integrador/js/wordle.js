@@ -97,7 +97,7 @@ function introducirPersonaje(){
     let campo = document.forms["formulario"]["nombre"];
     let ingreso = campo.value.toUpperCase();
     campo.value = "";
-    div.id = "juego";
+    div.classList.add("juego");
 
     //crear spans
     let letra1 = document.createElement("span");
@@ -123,67 +123,67 @@ function introducirPersonaje(){
 
     //letra 1
     if (ingreso[0] == nombrepjRandom[0]) {
-        letra1.id = "letraCorrecta"
+        letra1.classList.add("letraCorrecta");
     }
     else if ((ingreso[0] == nombrepjRandom[1] && !letra2encontrada) ||
         (ingreso[0] == nombrepjRandom[2] && !letra3encontrada) ||
         (ingreso[0] == nombrepjRandom[3] && !letra4encontrada) ||
         (ingreso[0] == nombrepjRandom[4] && !letra5encontrada)) {
-        letra1.id = "letraPosible"
+        letra1.classList.add("letraPosible");
     } else {
-        letra1.id = "letra";
+        letra1.classList.add("letra");
     }
 
     //letra 2
     if (ingreso[1] == nombrepjRandom[1]) {
-        letra2.id = "letraCorrecta"
+        letra2.classList.add("letraCorrecta");
     }
     else if ((ingreso[1] == nombrepjRandom[0] && !letra1encontrada)||
         (ingreso[1] == nombrepjRandom[2] && !letra3encontrada) ||
         (ingreso[1] == nombrepjRandom[3] && !letra4encontrada) ||
         (ingreso[1] == nombrepjRandom[4] && !letra5encontrada)) {
-        letra2.id = "letraPosible"
+        letra2.classList.add("letraPosible");
     } else {
-        letra2.id = "letra";
+        letra2.classList.add("letra");
     }
 
     //letra 3
     if (ingreso[2] == nombrepjRandom[2]) {
-        letra3.id = "letraCorrecta"
+        letra3.classList.add("letraCorrecta")
     }
     else if ((ingreso[2] == nombrepjRandom[0] && !letra1encontrada) ||
         (ingreso[2] == nombrepjRandom[1] && !letra2encontrada) ||
         (ingreso[2] == nombrepjRandom[3] && !letra4encontrada) ||
         (ingreso[2] == nombrepjRandom[4] && !letra5encontrada)) {
-        letra3.id = "letraPosible"
+        letra3.classList.add("letraPosible");
     } else {
-        letra3.id = "letra";
+        letra3.classList.add("letra");
     }
 
     //letra 4
     if (ingreso[3] == nombrepjRandom[3]) {
-        letra4.id = "letraCorrecta"
+        letra4.classList.add("letraCorrecta")
     }
     else if ((ingreso[3] == nombrepjRandom[0] && !letra1encontrada) ||
         (ingreso[3] == nombrepjRandom[1] && !letra2encontrada) ||
         (ingreso[3] == nombrepjRandom[2] && !letra3encontrada) ||
         (ingreso[3] == nombrepjRandom[4] && !letra5encontrada)) {
-        letra4.id = "letraPosible"
+        letra4.classList.add("letraPosible");
     } else {
-        letra4.id = "letra";
+        letra4.classList.add("letra");
     }
 
     //letra 5
     if (ingreso[4] == nombrepjRandom[4]) {
-        letra5.id = "letraCorrecta"
+        letra5.classList.add("letraCorrecta")
     }
     else if ((ingreso[4] == nombrepjRandom[0] && !letra1encontrada) ||
         (ingreso[4] == nombrepjRandom[1] && !letra2encontrada) ||
         (ingreso[4] == nombrepjRandom[2] && !letra3encontrada) ||
         (ingreso[4] == nombrepjRandom[3]) && !letra4encontrada) {
-        letra5.id = "letraPosible"
+        letra5.classList.add("letraPosible");
     } else {
-        letra5.id = "letra";
+        letra5.classList.add("letra");
     }
 
     //añadir las letras al div
