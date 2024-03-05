@@ -107,7 +107,7 @@ function temporizador() {
         min.innerHTML = min_aux;
     } else {
         clearInterval(comienzo)
-        bloquear_cartas();
+        bloquearTarjetas();
         window.location.href = 'perdiste.html';
     }
 }
