@@ -2,9 +2,8 @@
 var music = new Audio("img/arena/audio/music.mp3");
 var ki = new Audio("img/arena/audio/carga.mp3");
 music.loop = true;
-music.volume = 0;
-ki.volume = 0;
 mapaActual = 0;
+
 var listaMapas = [
     { nombre: "Torneo de las Artes Marciales",imagen: "img/arena/arenas/0.gif" },
     { nombre: "Yermos",imagen: "img/arena/arenas/1.gif" },
@@ -13,15 +12,9 @@ var listaMapas = [
     { nombre: "Páramos",imagen: "img/arena/arenas/4.gif" }
 ];
 
-//Goku y Piccolo - INICIALIZACIÓN VIDA KI y AUDIO ATAQUE
-var hppiccolo = 100;
-var hpgoku = 100;
-var kipiccolo = 100;
-var kigoku = 100;
+//Goku y Piccolo - INICIALIZACIÓN VIDA KI
 var piccolo = new Audio("img/arena/audio/makankosappo.mp3");
 var goku = new Audio("img/arena/audio/kamehameha.mp3");
-piccolo.volume = 0;
-goku.volume = 0;
 
 
 //INICIALIZACIÓN DE LOS BOTONES DE PELEA DESACTIVADOS.
@@ -38,7 +31,8 @@ var kigoku = document.getElementById("kigoku").textContent;
 var vidapiccolo = document.getElementById("vidapiccolo").textContent;
 var kipiccolo = document.getElementById("kipiccolo").textContent;
 
-
+//OBTENER VALORES DE VOLUMEN DEL STORAGE
+recuperarVolumen();
 
 function iniciarPelea() {
     desactivarBotones();
@@ -168,11 +162,13 @@ function standby() {
 function piccoloWins() {
     var img = document.getElementById("pelea");
     img.src = "img/arena/piccolowins.gif";
+    removerBotones();
 }
 
 function gokuWins() {
     var img = document.getElementById("pelea");
     img.src = "img/arena/gokuwins.gif";
+    removerBotones();
 }
 
 function desactivarBotones(){
@@ -218,6 +214,11 @@ function cambiarVolumen() {
         piccolo.volume = 0;
         ki.volume = 0;
     }
+    localStorage.setItem('musicVolume', music.volume);
+    localStorage.setItem('gokuVolume', goku.volume);
+    localStorage.setItem('piccoloVolume', piccolo.volume);
+    localStorage.setItem('kiVolume', ki.volume);
+    console.log("Guardado")
 }
 
 function mostrarVentana() {
@@ -225,8 +226,34 @@ function mostrarVentana() {
     div.style.display = "block";
   }
 
-  function cerrarVentana() {
+function cerrarVentana() {
     var div = document.getElementById("miDiv");
     div.style.display = "none";
   }
 
+function removerBotones(){
+    iniciar.innerText = "Volver a jugar"
+    iniciar.disabled = false;
+    iniciar.onclick = function() {window.location.reload();};
+}
+
+function recuperarVolumen(){
+    var span = document.getElementById("volumen");
+if (localStorage.getItem('musicVolume') !== null) {
+    music.volume = parseFloat(localStorage.getItem('musicVolume'));
+}
+if (localStorage.getItem('gokuVolume') !== null) {
+    goku.volume = parseFloat(localStorage.getItem('gokuVolume'));
+}
+if (localStorage.getItem('piccoloVolume') !== null) {
+    piccolo.volume = parseFloat(localStorage.getItem('piccoloVolume'));
+}
+if (localStorage.getItem('kiVolume') !== null) {
+    ki.volume = parseFloat(localStorage.getItem('kiVolume'));
+}
+if (localStorage.getItem('musicVolume') > 0) {
+    span.innerHTML = "🔊";
+} else {
+    span.innerHTML = "🔈";
+}
+}
