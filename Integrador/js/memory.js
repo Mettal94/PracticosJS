@@ -15,6 +15,8 @@ var movimientos = 0;
 var mostrarMovimientos = document.getElementById("contador_movimientos")
 var aciertos = 0;
 var mostrarAciertos = document.getElementById("contador_aciertos")
+var record;
+var mostrarRecord = document.getElementById("record");
 var imagenes = [
     "img/memorama/broly.png",
     "img/memorama/broly.png",
@@ -52,7 +54,10 @@ var imagenes = [
 var imagenesJuego = []
 var comienzo;
 
-document.addEventListener("DOMContentLoaded", iniciar_app)
+document.addEventListener("DOMContentLoaded", function () {
+    iniciar_app();
+    mostrar_record();
+})
 iniciar.addEventListener("click", function () {
     cronometro();
     desordenarImagenes(imagenes, imagenesJuego);
@@ -62,6 +67,14 @@ function iniciar_app() {
     bloquearTarjetas();
 }
 
+function mostrar_record () {
+    let record = localStorage.getItem("ultimo_record");
+    if(record==null){
+        mostrarRecord.innerHTML = "-";
+    }else{
+        mostrarRecord.innerHTML = record.toString();
+    }
+}
 function bloquearTarjetas() {
     for (let i = 0; i < cartas.length; i++) {
         cartas[i].disabled = true;
@@ -95,6 +108,7 @@ function temporizador() {
     } else {
         clearInterval(comienzo)
         bloquear_cartas();
+        window.location.href = 'perdiste.html';
     }
 }
 
@@ -128,13 +142,13 @@ function destapar(id) {
     if (tarjetasDestapadas == 1) {
         tarjeta1 = document.getElementById(id);
         resultado1 = imagenesJuego[id];
-        tarjeta1.style.border = '4px solid white';
+        tarjeta1.style.border = '3px solid #954300';
         tarjeta1.style.backgroundImage = 'url(' + resultado1 + ')';
         tarjeta1.disabled = true;
     } else if (tarjetasDestapadas == 2) {
         tarjeta2 = document.getElementById(id);
         resultado2 = imagenesJuego[id];
-        tarjeta2.style.border = '4px solid white';
+        tarjeta2.style.border = '3px solid #954300';
         tarjeta2.style.backgroundImage = 'url(' + resultado2 + ')';
         tarjeta2.disabled = true;
         movimientos++;
@@ -149,6 +163,9 @@ function destapar(id) {
             juegoactivo = true;
             if(aciertos==16){
                 clearInterval(comienzo);
+                window.location.href = 'ganaste.html';
+                record = min_aux + ":" + seg_aux;
+                localStorage.setItem("ultimo_record", record);
             }
         } else {
             setTimeout(() => {
