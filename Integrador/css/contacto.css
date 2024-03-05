@@ -28,15 +28,8 @@
 }
 
 #contFormulario input[type="text"]:focus {
-    outline: none; /* Eliminar el contorno al clickear */
-    border-color: red; /* Cambiar el color del borde al clickear*/
-}
-
-
-
-#contFormulario input[type="text"][name="comentario"] {
-    height: 100px; /* Altura específica para el campo de comentario */
-    resize: vertical; /* Permitir el redimensionamiento vertical */
+    outline: none;
+    border-color: red;
 }
 
 button {
