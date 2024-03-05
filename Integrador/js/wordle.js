@@ -58,10 +58,11 @@ document.getElementById('nombre').addEventListener('keypress', function(e) {
 //funcion para terminar el juego y cambiar la página    
 function terminarJuego(){
     var nombrePJ = document.getElementById("NombrePJ");
-    var imagenPJ = document.getElementById("ImagenPJ");
+    var imagenPJ = document.getElementById("Imagen");
     var descripciónPJ = document.getElementById("descripcionPJ");
     nombrePJ.innerText = pjRandom.nombre;
     imagenPJ.src = pjRandom.imagen;
+    imagenPJ.id = "ImagenPJ";
     descripciónPJ.innerText = pjRandom.descripcion;
 
     var nombreInput = document.getElementById("nombre");
@@ -72,6 +73,13 @@ function terminarJuego(){
     if(nombrepjRandom=="CHAOS"){
         adiosTen();
     }
+
+    var boton2 = document.getElementById("ayuda");
+    boton2.innerText = "Volver a jugar";
+    boton2.disabled = false;
+    boton2.onclick = function () {
+      window.location.reload();
+    };
 }
 
 
@@ -237,8 +245,4 @@ function mostrarVentana() {
   function cerrarVentana() {
     var div = document.getElementById("miDiv");
     div.style.display = "none";
-  }
-
-  function reiniciarJuego() {
-    location.reload();
   }
