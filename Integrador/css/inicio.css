@@ -43,3 +43,11 @@
     justify-content: center;
     height: 100%;
 }
+
+#intro {
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+    width: 75%;
+
+}
