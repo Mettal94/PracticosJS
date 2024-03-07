@@ -1,12 +1,12 @@
 #contenido {
-    text-align: center;
-    justify-content: center;
+    text-align: center; /* Alinea el texto al centro */
+    justify-content: center; /* Alinea el contenido horizontalmente en el centro */
 }
 
 #imagen {
-    height: 700px;
-    width: 1200px;
-    border: 2px;
-    border-color: black;
-    border-style: outset;
+    height: 700px; /* Altura de la imagen de 700px */
+    width: 1200px; /* Ancho de la imagen de 1200px */
+    border: 2px; /* Borde de 2px */
+    border-color: black; /* Color de borde negro */
+    border-style: outset; /* Estilo de borde saliente */
 }
