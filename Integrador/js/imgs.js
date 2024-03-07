@@ -49,51 +49,64 @@ let arreglo = [
   }
 ];
 
+// Arreglo para mantener el índice de las imágenes mostradas en la página
 let pos = [arreglo.length - 1, 0, 1];
 
-function cargarDescripcion(){
-    var titulo = document.getElementById("nombrepj");
-    titulo.textContent = arreglo[pos[1]].nombre;
-    var descripcion = document.getElementById("descripción");
-    descripcion.innerHTML = arreglo[pos[1]].descripcion;
+// Función para cargar la descripción del personaje actual
+function cargarDescripcion() {
+  // Obtener elementos del DOM para mostrar el nombre y la descripción
+  var titulo = document.getElementById("nombrepj");
+  var descripcion = document.getElementById("descripción");
+  // Asignar el nombre y la descripción del personaje actual a los elementos del DOM
+  titulo.textContent = arreglo[pos[1]].nombre;
+  descripcion.innerHTML = arreglo[pos[1]].descripcion;
 }
 
+// Obtener elementos del DOM para mostrar las imágenes de los personajes
 var imgizq = document.getElementById("izquierda");
-imgizq.src = arreglo[pos[0]].img;
-
 var imgcen = document.getElementById("principal");
-imgcen.src = arreglo[pos[1]].img;
-
 var imgder = document.getElementById("derecha");
+
+// Asignar las imágenes correspondientes a los elementos del DOM
+imgizq.src = arreglo[pos[0]].img;
+imgcen.src = arreglo[pos[1]].img;
 imgder.src = arreglo[pos[2]].img;
+
+// Cargar la descripción del personaje actual al cargar la página
 cargarDescripcion();
 
+// Función para mostrar las imágenes de los personajes anteriores
 function imgIzquierda() {
-    for (var i = 0; i < pos.length; i++) {
-        if (pos[i] == 0) {
-            pos[i] = arreglo.length - 1;
-        } else {
-            pos[i] = pos[i] - 1;
-        }
-    }
-    imgizq.src = arreglo[pos[0]].img;
-    imgcen.src = arreglo[pos[1]].img;
-    imgder.src = arreglo[pos[2]].img;
-   cargarDescripcion()
+  // Actualizar los índices para mostrar las imágenes anteriores
+  for (var i = 0; i < pos.length; i++) {
+      if (pos[i] == 0) {
+          pos[i] = arreglo.length - 1;
+      } else {
+          pos[i] = pos[i] - 1;
+      }
+  }
+  // Actualizar las imágenes en el DOM
+  imgizq.src = arreglo[pos[0]].img;
+  imgcen.src = arreglo[pos[1]].img;
+  imgder.src = arreglo[pos[2]].img;
+  // Cargar la descripción del personaje actual
+  cargarDescripcion();
 }
 
+// Función para mostrar las imágenes de los personajes siguientes
 function imgDerecha() {
-    for (var i = 0; i < pos.length; i++) {
-        if (pos[i] == arreglo.length-1) {
-            pos[i] = 0;
-        } else {
-            pos[i] = pos[i] + 1;
-        }
-    }
-    imgizq.src = arreglo[pos[0]].img;
-    imgcen.src = arreglo[pos[1]].img;
-    imgder.src = arreglo[pos[2]].img;
-    cargarDescripcion()
+  // Actualizar los índices para mostrar las imágenes siguientes
+  for (var i = 0; i < pos.length; i++) {
+      if (pos[i] == arreglo.length - 1) {
+          pos[i] = 0;
+      } else {
+          pos[i] = pos[i] + 1;
+      }
+  }
+  // Actualizar las imágenes en el DOM
+  imgizq.src = arreglo[pos[0]].img;
+  imgcen.src = arreglo[pos[1]].img;
+  imgder.src = arreglo[pos[2]].img;
+  // Cargar la descripción del personaje actual
+  cargarDescripcion();
 }
-
-
