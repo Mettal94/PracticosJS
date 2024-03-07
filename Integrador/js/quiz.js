@@ -131,90 +131,90 @@ let score = 0;
 
 // Función para iniciar el cuestionario
 function startQuiz() {
-  currentQuestionIndex = 0;
-  score = 0;
-  nextButton.innerHTML = "Siguiente";
-  showQuestion();
+  currentQuestionIndex = 0; // Reinicia el índice de la pregunta actual
+  score = 0; // Reinicia el puntaje del jugador
+  nextButton.innerHTML = "Siguiente"; // Cambia el texto del botón "Siguiente"
+  showQuestion(); // Muestra la primera pregunta
 }
 
 // Función para mostrar la pregunta actual y sus opciones de respuesta
 function showQuestion() {
-  resetState();
-  let currentQuestion = questions[currentQuestionIndex];
-  let questionNo = currentQuestionIndex + 1;
-  questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+  resetState(); // Reinicia el estado del DOM
+  let currentQuestion = questions[currentQuestionIndex]; // Obtiene la pregunta actual del array
+  let questionNo = currentQuestionIndex + 1; // Calcula el número de pregunta (1-indexed)
+  questionElement.innerHTML = questionNo + ". " + currentQuestion.question; // Muestra la pregunta en el HTML
 
   // Creación de botones de respuesta y asignación de eventos
   currentQuestion.answers.forEach((answer) => {
-    const button = document.createElement("button");
-    button.innerHTML = answer.txt;
-    button.classList.add("btn");
-    answerButton.appendChild(button);
+    const button = document.createElement("button"); // Crea un nuevo botón
+    button.innerHTML = answer.txt; // Establece el texto del botón como la respuesta
+    button.classList.add("btn"); // Agrega una clase al botón
+    answerButton.appendChild(button); // Agrega el botón al contenedor de respuestas
 
     if (answer.correct) {
-      button.dataset.correct = answer.correct;
+      button.dataset.correct = answer.correct; // Establece un atributo personalizado para indicar si la respuesta es correcta
     }
-    button.addEventListener("click", selectAnswer);
+    button.addEventListener("click", selectAnswer); // Agrega un event listener para manejar la selección de la respuesta
   });
 }
 
 // Función para resetear el estado del DOM
 function resetState() {
-  nextButton.style.display = "none";
+  nextButton.style.display = "none"; // Oculta el botón "Siguiente"
   while (answerButton.firstChild) {
-    answerButton.removeChild(answerButton.firstChild);
+    answerButton.removeChild(answerButton.firstChild); // Elimina todos los botones de respuesta del contenedor
   }
 }
 
 // Función para manejar la selección de una respuesta por parte del jugador
 function selectAnswer(e) {
-  const selectedBtn = e.target;
-  const isCorrect = selectedBtn.dataset.correct === "true";
+  const selectedBtn = e.target; // Obtiene el botón seleccionado
+  const isCorrect = selectedBtn.dataset.correct === "true"; // Verifica si la respuesta seleccionada es correcta
 
   // Actualización del puntaje y estilo visual de la respuesta seleccionada
   if (isCorrect) {
-    selectedBtn.classList.add("correct");
-    score++;
+    selectedBtn.classList.add("correct"); // Agrega una clase al botón para indicar que la respuesta es correcta
+    score++; // Incrementa el puntaje del jugador
   } else {
-    selectedBtn.classList.add("incorrect");
+    selectedBtn.classList.add("incorrect"); // Agrega una clase al botón para indicar que la respuesta es incorrecta
   }
 
   // Deshabilitar botones de respuesta y mostrar el botón "Siguiente"
   Array.from(answerButton.children).forEach((button) => {
     if (button.dataset.correct === "true") {
-      button.classList.add("correct");
+      button.classList.add("correct"); // Agrega una clase a los botones de respuesta correctos
     }
-    button.disabled = true;
+    button.disabled = true; // Deshabilita todos los botones de respuesta
   });
-  nextButton.style.display = "block";
+  nextButton.style.display = "block"; // Muestra el botón "Siguiente"
 }
 
 // Función para mostrar el puntaje final
 function showScore() {
-  resetState();
-  questionElement.innerHTML = `Tu puntaje fue ${score} de ${questions.length}!`;
-  nextButton.innerHTML = "Jugar de nuevo";
-  nextButton.style.display = "block";
+  resetState(); // Reinicia el estado del DOM
+  questionElement.innerHTML = `Tu puntaje fue ${score} de ${questions.length}!`; // Muestra el puntaje final
+  nextButton.innerHTML = "Jugar de nuevo"; // Cambia el texto del botón "Siguiente"
+  nextButton.style.display = "block"; // Muestra el botón "Siguiente"
 }
 
 // Función para manejar el botón "Siguiente"
 function handleNextButton() {
-  currentQuestionIndex++;
+  currentQuestionIndex++; // Incrementa el índice de la pregunta actual
   if (currentQuestionIndex < questions.length) {
-    showQuestion();
+    showQuestion(); // Muestra la siguiente pregunta si quedan preguntas por responder
   } else {
-    showScore();
+    showScore(); // Muestra el puntaje final si todas las preguntas han sido respondidas
   }
 }
 
 // Event listener para el botón "Siguiente"
 nextButton.addEventListener("click", () => {
   if (currentQuestionIndex < questions.length) {
-    handleNextButton();
+    handleNextButton(); // Maneja el evento de clic en el botón "Siguiente"
   } else {
-    startQuiz();
+    startQuiz(); // Reinicia el cuestionario si se hace clic en el botón "Siguiente" después de mostrar el puntaje final
   }
 });
 
 // Iniciar el cuestionario al cargar la página
-startQuiz();
+startQuiz(); // Llama a la función para iniciar el cuestionario cuando la página se carga
