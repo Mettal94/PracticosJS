@@ -1,3 +1,4 @@
+// Definición de las preguntas y respuestas
 const questions = [
   {
     question:
@@ -119,14 +120,16 @@ const questions = [
       "Pese al meme de internet, el nivel de poder que despliega Goku al enfrentarse a Nappa sobrepasa las 8.000 unidades. Una cantidad que llegaría a multiplicar por cuatro gracias al kaio-ken durante su combate con Vegeta.",
   },
 ];
-
+// Elementos del DOM
 const questionElement = document.getElementById("question");
 const answerButton = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 
+// Variables de estado del juego
 let currentQuestionIndex = 0;
 let score = 0;
 
+// Función para iniciar el cuestionario
 function startQuiz() {
   currentQuestionIndex = 0;
   score = 0;
@@ -134,12 +137,14 @@ function startQuiz() {
   showQuestion();
 }
 
+// Función para mostrar la pregunta actual y sus opciones de respuesta
 function showQuestion() {
   resetState();
   let currentQuestion = questions[currentQuestionIndex];
   let questionNo = currentQuestionIndex + 1;
   questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
+  // Creación de botones de respuesta y asignación de eventos
   currentQuestion.answers.forEach((answer) => {
     const button = document.createElement("button");
     button.innerHTML = answer.txt;
@@ -153,6 +158,7 @@ function showQuestion() {
   });
 }
 
+// Función para resetear el estado del DOM
 function resetState() {
   nextButton.style.display = "none";
   while (answerButton.firstChild) {
@@ -160,16 +166,20 @@ function resetState() {
   }
 }
 
+// Función para manejar la selección de una respuesta por parte del jugador
 function selectAnswer(e) {
   const selectedBtn = e.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
 
+  // Actualización del puntaje y estilo visual de la respuesta seleccionada
   if (isCorrect) {
     selectedBtn.classList.add("correct");
     score++;
   } else {
     selectedBtn.classList.add("incorrect");
   }
+
+  // Deshabilitar botones de respuesta y mostrar el botón "Siguiente"
   Array.from(answerButton.children).forEach((button) => {
     if (button.dataset.correct === "true") {
       button.classList.add("correct");
@@ -179,6 +189,7 @@ function selectAnswer(e) {
   nextButton.style.display = "block";
 }
 
+// Función para mostrar el puntaje final
 function showScore() {
   resetState();
   questionElement.innerHTML = `Tu puntaje fue ${score} de ${questions.length}!`;
@@ -186,6 +197,7 @@ function showScore() {
   nextButton.style.display = "block";
 }
 
+// Función para manejar el botón "Siguiente"
 function handleNextButton() {
   currentQuestionIndex++;
   if (currentQuestionIndex < questions.length) {
@@ -195,8 +207,8 @@ function handleNextButton() {
   }
 }
 
+// Event listener para el botón "Siguiente"
 nextButton.addEventListener("click", () => {
-  console.log(currentQuestionIndex);
   if (currentQuestionIndex < questions.length) {
     handleNextButton();
   } else {
@@ -204,4 +216,5 @@ nextButton.addEventListener("click", () => {
   }
 });
 
+// Iniciar el cuestionario al cargar la página
 startQuiz();
