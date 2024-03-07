@@ -1,144 +1,164 @@
+/* Definición de una fuente personalizada */
 @font-face {
-    font-family: "Instruction";
-    src: url("../font/InstructionBold.otf") format(".otf");
+    font-family: "Instruction"; /* Nombre de la fuente */
+    src: url("../font/InstructionBold.otf") format(".otf"); /* Ubicación del archivo de la fuente */
 }
 
+/* Estilos para encabezados de nivel 2 */
 h2 {
-    font-family: "Instruction";
-    font-size: 32px;
-    margin-bottom: 0px;
+    font-family: "Instruction"; /* Fuente personalizada */
+    font-size: 32px; /* Tamaño de fuente */
+    margin-bottom: 0px; /* Margen inferior */
 }
 
-#ImagenPJ,#Imagen {
-    margin-top: 10px;
+/* Estilos para imágenes */
+#ImagenPJ,
+#Imagen {
+    margin-top: 10px; /* Margen superior */
 }
 
+/* Estilos específicos para la imagen con id "ImagenPJ" */
 #ImagenPJ {
-    border-radius: 50%;
+    border-radius: 50%; /* Radio del borde */
 }
 
+/* Estilos para el contenedor principal */
 #Dragondle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-}
-.juego{
-    padding: 10px;
-    border-radius: 40px;
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.letra ,.letraPosible , .letraCorrecta {
-    display: inline-block;
-    background-color: white;
-    border: 2px groove black;
-    border-radius: 20%;
-    color: black;
-    font-size: 32px;
-    padding: 0;
-    margin: 0 5px;
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-    text-align: center;
+    display: flex; /* Mostrar como flex container */
+    flex-direction: column; /* Dirección de los elementos */
+    align-items: center; /* Alinear elementos horizontalmente */
+    align-content: center; /* Alinear el contenido en el eje de contenido */
+    align-self: center; /* Alinear el contenido respecto a sí mismo */
 }
 
-.letraPosible{
-    background-color: rgb(255, 255, 0);
+/* Estilos para el contenedor de juego */
+.juego {
+    padding: 10px; /* Espaciado interno */
+    border-radius: 40px; /* Radio del borde */
+    width: 95%; /* Anchura */
+    margin: 0 auto; /* Margen automático izquierda-derecha */
+    display: flex; /* Mostrar como flex container */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
 }
 
-.letraCorrecta{
-    background-color: rgb(0, 255, 0);
+/* Estilos para las letras en el juego */
+.letra,
+.letraPosible,
+.letraCorrecta {
+    display: inline-block; /* Mostrar como bloque en línea */
+    background-color: white; /* Color de fondo */
+    border: 2px groove black; /* Borde */
+    border-radius: 20%; /* Radio del borde */
+    color: black; /* Color del texto */
+    font-size: 32px; /* Tamaño de fuente */
+    padding: 0; /* Relleno interno */
+    margin: 0 5px; /* Margen izquierdo-derecho */
+    width: 32px; /* Anchura */
+    height: 32px; /* Altura */
+    line-height: 32px; /* Altura de línea */
+    text-align: center; /* Alineación del texto */
 }
 
+/* Estilos para las letras posibles */
+.letraPosible {
+    background-color: rgb(255, 255, 0); /* Color de fondo */
+}
+
+/* Estilos para las letras correctas */
+.letraCorrecta {
+    background-color: rgb(0, 255, 0); /* Color de fondo */
+}
+
+/* Estilos para botones */
 button {
-    background-color: #fa8b2a;
-    color: #000000;
-    font-size: 16px;
-    font-weight: bolder;
-    text-shadow: -1px 1px white;
-    height: 42px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10%;
-    margin: 5px;
+    background-color: #fa8b2a; /* Color de fondo */
+    color: #000000; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bolder; /* Grosor de la fuente */
+    text-shadow: -1px 1px white; /* Sombra de texto */
+    height: 42px; /* Altura */
+    padding-left: 10px; /* Espaciado interno izquierdo */
+    padding-right: 10px; /* Espaciado interno derecho */
+    border-radius: 10%; /* Radio del borde */
+    margin: 5px; /* Margen */
 }
 
+/* Estilos para el estado deshabilitado del botón */
 button:disabled {
-    background-color: #9c6331;
+    background-color: #9c6331; /* Color de fondo */
 }
 
+/* Estilos para el estado activo del botón al pasar el ratón */
 button:enabled:hover {
-    background-color: rgba(255, 165, 0);
+    background-color: rgba(255, 165, 0); /* Color de fondo */
 }
 
+/* Estilos para el estado deshabilitado del botón al pasar el ratón */
 button:disabled:hover {
-    background-color: #b8783f;
+    background-color: #b8783f; /* Color de fondo */
 }
 
+/* Estilos para el input con id "nombre" */
 #nombre {
-    height: 32px;
-    text-align: center;
+    height: 32px; /* Altura */
+    text-align: center; /* Alineación del texto */
 }
 
+/* Estilos para el contenedor de juego con id "wordle" */
 #wordle {
-    padding-bottom: 50px;
+    padding-bottom: 50px; /* Espaciado inferior */
 }
 
+/* Estilos para la explosión de Chaos */
 #chaosExplosion {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /*para centrarla en la página*/
-    z-index: 10;
-    /*arriba de todo*/
+    position: fixed; /* Posicionamiento fijo */
+    top: 50%; /* Distancia desde la parte superior */
+    left: 50%; /* Distancia desde la parte izquierda */
+    transform: translate(-50%, -50%); /* Centrar en la página */
+    z-index: 10; /* Capa más alta */
 }
 
+/* Estilos para la ventana flotante */
 .ventana-flotante {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /*para centrarla en la página*/
-    background-color: #fa8b2a;
-    padding: 20px;
-    display: none;
-    width: 40vw;
-    max-height: 40vw;
-    overflow-y: auto;
-    border-radius: 20px;
-    border: #c56613;
-    border-style: double;
-    border-width: 10px;
-    z-index: 9;
-    /*arriba los elentos de la página*/
+    position: fixed; /* Posicionamiento fijo */
+    top: 50%; /* Distancia desde la parte superior */
+    left: 50%; /* Distancia desde la parte izquierda */
+    transform: translate(-50%, -50%); /* Centrar en la página */
+    background-color: #fa8b2a; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    display: none; /* No mostrar por defecto */
+    width: 40vw; /* Anchura */
+    max-height: 40vw; /* Altura máxima */
+    overflow-y: auto; /* Permitir desplazamiento vertical */
+    border-radius: 20px; /* Radio del borde */
+    border: #c56613; /* Borde */
+    border-style: double; /* Estilo del borde */
+    border-width: 10px; /* Grosor del borde */
+    z-index: 9; /* Capa más alta */
 }
 
+/* Estilos para el botón de cerrar la ventana flotante */
 .cerrar {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    /*cambia el cursor a la manito*/
+    position: absolute; /* Posicionamiento absoluto */
+    top: 10px; /* Distancia desde la parte superior */
+    right: 10px; /* Distancia desde la parte derecha */
+    background: none; /* Fondo transparente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Tipo de cursor */
 }
 
+/* Estilos para el estado deshabilitado del botón al pasar el ratón */
 button:disabled:hover {
-    background-color: #b8783f;
+    background-color: #b8783f; /* Color de fondo */
 }
 
-@media screen and (max-width:550px) {
+/* Media query para pantallas de hasta 550px */
+@media screen and (max-width: 550px) {
+    /* Ajustes de estilo para la ventana flotante */
     .ventana-flotante {
-        width: 80vw;
-        max-height: 80vw;
+        width: 80vw; /* Anchura */
+        max-height: 80vw; /* Altura máxima */
     }
-
-    /*ajustes de ventana para resoluciones mas chicas*/
+    /* Ajustes adicionales para resoluciones más pequeñas */
 }
