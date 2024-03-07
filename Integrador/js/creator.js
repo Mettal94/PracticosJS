@@ -1,3 +1,4 @@
+// Definición de listas de imágenes para cabeza, cuerpo y pantalón
 var listaCabeza = [
     { imagen: "img/cac/head/001.png" },
     { imagen: "img/cac/head/002.png" },
@@ -83,19 +84,23 @@ var listaBody = [
     { imagen: "img/cac/body/023.png" }
 ];
 
+// Arreglo de posiciones [cabeza, cuerpo, pantalón]
 let pos = [0, 0, 0];
 randomizar()
 
+// Función para cargar y mostrar el personaje con las imágenes correspondientes
 function cargarPersonaje() {
     var cabeza = document.getElementById("headZ");
-    cabeza.src = listaCabeza[pos[0]].imagen;
     var cuerpo = document.getElementById("bodyZ");
-    cuerpo.src = listaBody[pos[1]].imagen;
     var pantalon = document.getElementById("pantZ");
+    
+    // Asignar las imágenes según las posiciones actuales
+    cabeza.src = listaCabeza[pos[0]].imagen;
+    cuerpo.src = listaBody[pos[1]].imagen;
     pantalon.src = listaPant[pos[2]].imagen;
 }
 
-
+// Funciones para cambiar la posición de la cabeza, el cuerpo y el pantalón hacia la izquierda
 function cabezaIzquierda() {
     if (pos[0] == 0) {
         pos[0] = listaCabeza.length - 1;
@@ -122,7 +127,7 @@ function pantalonIzquierda() {
 cargarPersonaje();
 }
 
-
+// Funciones para cambiar la posición de la cabeza, el cuerpo y el pantalón hacia la derecha
 function cabezaDerecha() {
     if (pos[0] == listaCabeza.length - 1) {
         pos[0] = 0;
@@ -149,7 +154,7 @@ function pantalonDerecha() {
     }
 cargarPersonaje();
 }
-
+// Función para asignar posiciones aleatorias y cargar el personaje al azar
 function randomizar(){
     pos[0] = (Math.floor(Math.random() * listaCabeza.length));
     pos[1] = (Math.floor(Math.random() * listaBody.length));
