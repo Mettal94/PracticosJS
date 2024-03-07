@@ -1,52 +1,59 @@
+/* Estilos para el contenedor principal del juego */
 .divJuego {
-    display: flex;
-    justify-content: center;
-    margin: 20px auto;
-    width: 75%;
-    border: 2px outset rgba(255, 165, 0, 0.4);
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.4);
-    overflow: hidden;
+    display: flex; /* Mostrar como flexbox */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    margin: 20px auto; /* Margen superior e inferior de 20px y margen izquierdo y derecho automáticos */
+    width: 75%; /* Ancho del 75% del contenedor padre */
+    border: 2px outset rgba(255, 165, 0, 0.4); /* Borde con efecto de relieve, color naranja semi-transparente */
+    border-radius: 10px; /* Radio del borde de 10px */
+    background-color: rgba(255, 255, 255, 0.4); /* Color de fondo blanco semi-transparente */
+    overflow: hidden; /* Ocultar contenido que desborda del contenedor */
 }
 
+/* Estilos hover para el contenedor principal del juego */
 .divJuego:hover {
-    background-color: rgba(255, 165, 0, 0.4);
-    border: 2px outset rgba(255, 165, 0, 0.7);
-    cursor: pointer;
+    background-color: rgba(255, 165, 0, 0.4); /* Color de fondo naranja semi-transparente al pasar el mouse */
+    border: 2px outset rgba(255, 165, 0, 0.7); /* Borde con efecto de relieve más pronunciado, color naranja semi-transparente */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
 }
 
+/* Estilos para el contenido de texto en el contenedor principal del juego */
 .divJuego .texto,
 .divJuego .img {
-    flex: 1;
-    max-width: 50%;
-    padding: 20px;
-    text-align: center;
+    flex: 1; /* Ocupar todo el espacio disponible */
+    max-width: 50%; /* Ancho máximo del 50% del contenedor padre */
+    padding: 20px; /* Relleno interno de 20px */
+    text-align: center; /* Alineación del texto al centro */
 }
 
+/* Estilos para el contenido de imagen en el contenedor principal del juego */
 .divJuego .img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* Mostrar como flexbox */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
 }
 
+/* Estilos para la imagen dentro del contenido de imagen en el contenedor principal del juego */
 .divJuego .img img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
+    max-width: 100%; /* Ancho máximo del 100% del contenedor padre */
+    max-height: 100%; /* Altura máxima del 100% del contenedor padre */
+    width: auto; /* Ancho automático */
+    height: auto; /* Altura automática */
 }
 
+/* Estilos para el texto dentro del contenido de texto en el contenedor principal del juego */
 .divJuego .texto p {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+    margin: 0; /* Margen de 0 */
+    display: flex; /* Mostrar como flexbox */
+    align-items: center; /* Centrar verticalmente el contenido */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    height: 100%; /* Altura del 100% del contenedor padre */
 }
 
+/* Estilos para el contenedor de introducción */
 #intro {
-    display: flex;
-    justify-content: center;
-    margin: 5px auto;
-    width: 75%;
+    display: flex; /* Mostrar como flexbox */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    margin: 5px auto; /* Margen superior e inferior de 5px y margen izquierdo y derecho automáticos */
+    width: 75%; /* Ancho del 75% del contenedor padre */
 }
