@@ -1,146 +1,163 @@
+/* Definición de la fuente personalizada Saiyan Sans */
 @font-face {
     font-family: "Saiyan Sans";
     src: url("../font/SS.ttf") format("trueType");
-  }
-  
-  body{
-    background-image: url('../img/background.jpg');
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
 }
+
+/* Estilos generales del body */
+body {
+    background-image: url('../img/background.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Tamaño de la imagen de fondo */
+    background-position: center; /* Posición de la imagen de fondo */
+    justify-content: center; /* Alineación horizontal de contenido centrada */
+    align-items: center; /* Alineación vertical de contenido centrada */
+    height: 100vh; /* Altura del viewport */
+}
+
+/* Estilos para la barra de desplazamiento en webkit */
 body::-webkit-scrollbar {
-    width: 15px;
-  }
-  
-  body::-webkit-scrollbar-track {
-    border-radius: 50px;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background: orange;
-    border-radius: 50px;
-  }
-  
-  body::-webkit-scrollbar-thumb:hover {
-    background: rgb(255, 101, 0);
-  }
-  
+    width: 15px; /* Ancho de la barra de desplazamiento */
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 50px; /* Radio del borde del track */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: orange; /* Color del thumb */
+    border-radius: 50px; /* Radio del borde del thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 101, 0); /* Color del thumb en hover */
+}
+
+/* Estilos para el encabezado */
 #header {
-    background-color: rgba(255, 165, 0, 0.7);
-    padding: 10px;
-    border-radius: 40px;  
-    width: 95%;
-    margin: 0 auto; 
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+    background-color: rgba(255, 165, 0, 0.7); /* Color de fondo con transparencia */
+    padding: 10px; /* Relleno */
+    border-radius: 40px; /* Radio del borde */
+    width: 95%; /* Ancho del 95% */
+    margin: 0 auto; /* Margen automático */
+    display: flex; /* Mostrar como flexbox */
+    justify-content: center; /* Alineación horizontal de contenido centrada */
+    align-items: center; /* Alineación vertical de contenido centrada */
 }
 
+/* Estilos para los elementos dentro del encabezado */
 #header div {
-    display: inline-block;
-    margin: 5px;
+    display: inline-block; /* Mostrar como bloque en línea */
+    margin: 5px; /* Margen */
 }
 
+/* Estilos para los enlaces dentro del encabezado */
 #header a {
-    display: inline-block;
-    text-decoration: none; 
-    margin: 0 10px; 
-    padding: 5px 10px; 
-    font-family: Arial, sans-serif; 
-    font-size: 16px;
-    color: white;
+    display: inline-block; /* Mostrar como bloque en línea */
+    text-decoration: none; /* Sin decoración de texto */
+    margin: 0 10px; /* Margen */
+    padding: 5px 10px; /* Relleno */
+    font-family: Arial, sans-serif; /* Fuente */
+    font-size: 16px; /* Tamaño de fuente */
+    color: white; /* Color del texto */
 }
 
+/* Estilos hover para los elementos dentro del encabezado */
 #header div:hover {
-    background-color: #f6ce85;
-    border-radius: 10px; 
+    background-color: #f6ce85; /* Color de fondo en hover */
+    border-radius: 10px; /* Radio del borde */
 }
 
-#contenido{
-    display: block;
-    text-align: center;
-    flex:1;
-    margin-bottom: 60px;
+/* Estilos para el contenido */
+#contenido {
+    display: block; /* Mostrar como bloque */
+    text-align: center; /* Alineación del texto al centro */
+    flex: 1; /* Ocupar todo el espacio disponible */
+    margin-bottom: 60px; /* Margen inferior */
 }
 
-#espaciado{
-    padding: 30px;
+/* Estilos para el espacio */
+#espaciado {
+    padding: 30px; /* Relleno */
 }
 
+/* Estilos para el pie de página */
 #footer {
-    background-color: #0d1117;
-    width: 100%;
-    margin-top: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    align-items: center; 
-    position: fixed;
-    bottom: 0px;
-    z-index: 9;
-    left:0px;
+    background-color: #0d1117; /* Color de fondo */
+    width: 100%; /* Ancho del 100% */
+    margin-top: 20px; /* Margen superior */
+    padding-top: 5px; /* Relleno superior */
+    padding-bottom: 5px; /* Relleno inferior */
+    display: flex; /* Mostrar como flexbox */
+    align-self: center; /* Alineación del contenido en sí mismo */
+    justify-content: center; /* Alineación horizontal de contenido centrada */
+    align-items: center; /* Alineación vertical de contenido centrada */
+    position: fixed; /* Posicionamiento fijo */
+    bottom: 0px; /* Abajo */
+    z-index: 9; /* Z-index */
+    left: 0px; /* Izquierda */
 }
 
+/* Estilos para los elementos dentro del pie de página */
 #footer div {
-    display: inline-block;
-    margin: 5px;
-    color: white;;
+    display: inline-block; /* Mostrar como bloque en línea */
+    margin: 5px; /* Margen */
+    color: white; /* Color del texto */
 }
 
+/* Estilos para los enlaces dentro del pie de página */
 #footer a {
-    display: inline-block;
-    text-decoration: none; 
-    margin: 0 10px; 
-    padding: 5px 10px; 
-    font-family: Arial, sans-serif; 
-    font-size: 16px;
-    color: white;
+    display: inline-block; /* Mostrar como bloque en línea */
+    text-decoration: none; /* Sin decoración de texto */
+    margin: 0 10px; /* Margen */
+    padding: 5px 10px; /* Relleno */
+    font-family: Arial, sans-serif; /* Fuente */
+    font-size: 16px; /* Tamaño de fuente */
+    color: white; /* Color del texto */
 }
 
+/* Estilos hover para los elementos dentro del pie de página */
 #footer div:hover {
-    background-color: rgb(255, 101, 0);
-    border-radius: 10px; 
+    background-color: rgb(255, 101, 0); /* Color de fondo en hover */
+    border-radius: 10px; /* Radio del borde */
 }
 
-h1{
-    color:red;
-    font-family: "Saiyan Sans";
-    font-size: 48px;
-    font-weight: lighter;
-    font-stretch:extra-expanded;
-    font-style: italic;
+/* Estilos para el título h1 */
+h1 {
+    color: red; /* Color del texto rojo */
+    font-family: "Saiyan Sans"; /* Fuente personalizada Saiyan Sans */
+    font-size: 48px; /* Tamaño de fuente de 48px */
+    font-weight: lighter; /* Grosor de la fuente más ligero */
+    font-stretch: extra-expanded; /* Expansión de la fuente */
+    font-style: italic; /* Estilo de la fuente itálica */
 }
 
-
-@media screen and (max-width:600px) {
-    #header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    /* Estilos para el encabezado en pantallas pequeñas */
+    #header {
+        display: flex; /* Mostrar como flexbox */
+        flex-direction: column; /* Dirección de los elementos como columna */
+        align-items: center; /* Alineación vertical de contenido centrada */
     }
-    #footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-
-    #footer a {
-        margin: 0 5px; 
-        padding: 4px 5px; 
-        font-size: 15px;
-    }
-
-    #espaciado{
-        padding: 100px;
-    }
-
     
+    /* Estilos para el pie de página en pantallas pequeñas */
+    #footer {
+        display: flex; /* Mostrar como flexbox */
+        flex-direction: column; /* Dirección de los elementos como columna */
+        align-items: center; /* Alineación vertical de contenido centrada */
+        padding-top: 0px; /* Relleno superior de 0px */
+        padding-bottom: 0px; /* Relleno inferior de 0px */
+    }
+    
+    /* Estilos para los enlaces dentro del pie de página en pantallas pequeñas */
+    #footer a {
+        margin: 0 5px; /* Margen */
+        padding: 4px 5px; /* Relleno */
+        font-size: 15px; /* Tamaño de fuente de 15px */
+    }
+    
+    /* Estilos para el espacio en pantallas pequeñas */
+    #espaciado {
+        padding: 100px; /* Relleno de 100px */
+    }
 }
