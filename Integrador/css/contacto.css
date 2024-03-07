@@ -1,68 +1,70 @@
 #contact {
-    display: flex;
-    
+    display: flex; /* Crea un contenedor flexible para alinear los elementos hijos */
 }
+
 #contFormulario {
-    max-width: 500px; 
-    margin: 0 auto;
+    max-width: 500px; /* Establece el ancho máximo del contenedor del formulario a 500px */
+    margin: 0 auto; /* Centra el contenedor del formulario horizontalmente */
 }
 
 #contFormulario input,
 #contFormulario textarea {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px; 
+    display: block; /* Hace que los elementos de entrada y las áreas de texto sean bloques */
+    width: 100%; /* Establece el ancho al 100% para que ocupen todo el ancho del contenedor */
+    margin-bottom: 10px; /* Añade un espacio inferior de 10px entre cada elemento */
 }
 
 #comentario {
-    height: 100px;
+    height: 100px; /* Establece la altura de la área de texto de comentario a 100px */
 }
+
 #contFormulario input[type="text"] {
-    border: 2px solid orange;
-    border-radius: 8px; 
-    padding: 10px; 
-    margin-bottom: 15px; 
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333; 
+    border: 2px solid orange; /* Establece un borde sólido de 2px de color naranja para los campos de texto */
+    border-radius: 8px; /* Aplica un borde redondeado de 8px */
+    padding: 10px; /* Añade un espacio interno de 10px */
+    margin-bottom: 15px; /* Añade un espacio inferior de 15px */
+    font-family: Arial, sans-serif; /* Establece la fuente del texto */
+    font-size: 16px; /* Establece el tamaño de fuente a 16px */
+    color: #333; /* Establece el color del texto a gris oscuro */
 }
 
 #contFormulario input[type="text"]:focus {
-    outline: none;
-    border-color: red;
+    outline: none; /* Elimina el contorno del campo de texto al recibir enfoque */
+    border-color: red; /* Cambia el color del borde a rojo al recibir enfoque */
 }
 
 button {
-    background-color: #fa8b2a;
-    color: #000000;
-    font-size: 16px;
-    font-weight: bolder;
-    text-shadow: -1px 1px white;
-    height: 42px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10%;
-    margin: 5px;
-    margin-bottom: 70px;
+    background-color: #fa8b2a; /* Establece el color de fondo del botón */
+    color: #000000; /* Establece el color del texto del botón */
+    font-size: 16px; /* Establece el tamaño de fuente del botón a 16px */
+    font-weight: bolder; /* Establece el peso de la fuente en negrita */
+    text-shadow: -1px 1px white; /* Agrega un efecto de sombra al texto del botón */
+    height: 42px; /* Establece la altura del botón */
+    padding-left: 10px; /* Añade un espacio interno a la izquierda */
+    padding-right: 10px; /* Añade un espacio interno a la derecha */
+    border-radius: 10%; /* Aplica un borde redondeado del 10% */
+    margin: 5px; /* Añade un espacio de margen de 5px */
+    margin-bottom: 70px; /* Añade un espacio inferior de 70px */
 }
 
 button:disabled {
-    background-color: #9c6331;
+    background-color: #9c6331; /* Cambia el color de fondo del botón a marrón cuando está desactivado */
 }
 
-button:enabled:hover{
-    background-color: rgba(255, 165, 0);
+button:enabled:hover {
+    background-color: rgba(255, 165, 0); /* Cambia el color de fondo del botón a naranja transparente al pasar el cursor */
 }
 
 button:disabled:hover {
-    background-color: #b8783f;
+    background-color: #b8783f; /* Cambia el color de fondo del botón a marrón al pasar el cursor cuando está desactivado */
 }
 
 #SSJVegeta {
-    margin-top: 100px;
-    margin-left: 20px;
+    margin-top: 100px; /* Añade un espacio superior de 100px a la imagen de Vegeta SSJ */
+    margin-left: 20px; /* Añade un espacio izquierdo de 20px a la imagen de Vegeta SSJ */
 }
+
 #SSJGoku {
-    margin-top: 100px;
-    margin-right: 20px;
+    margin-top: 100px; /* Añade un espacio superior de 100px a la imagen de Goku SSJ */
+    margin-right: 20px; /* Añade un espacio derecho de 20px a la imagen de Goku SSJ */
 }
