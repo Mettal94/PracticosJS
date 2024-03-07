@@ -1,57 +1,53 @@
-#cuerpoPjs{
-    align-self: center;
-    justify-self: center;
-    margin-bottom: 100px;
+#cuerpoPjs {
+    align-self: center; /* Alinea el elemento verticalmente en el centro */
+    justify-self: center; /* Alinea el elemento horizontalmente en el centro */
+    margin-bottom: 100px; /* Margen inferior de 100px */
 }
 
-#contenedor{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    margin-top: 25px;
-    justify-content: center;
-
+#contenedor {
+    display: flex; /* Muestra el contenedor como flexbox */
+    align-items: center; /* Alinea los elementos hijos verticalmente en el centro */
+    align-content: center; /* Alinea el contenido verticalmente en el centro */
+    align-self: center; /* Alinea el contenedor verticalmente en el centro */
+    margin-top: 25px; /* Margen superior de 25px */
+    justify-content: center; /* Alinea los elementos hijos horizontalmente en el centro */
 }
 
-#izquierda, #derecha{
-    width: 100px;
-    height: 200px;
-    background-color: orange;
-}
-img{
-    border-style: double;
-    border-radius: 0px;  
-    }
-
-#principal{
-    display: flex;
-    background-color: #ff6500;
-    margin: 0 -25px;
-    z-index: 2;
+#izquierda, #derecha {
+    width: 100px; /* Ancho de 100px */
+    height: 200px; /* Altura de 200px */
+    background-color: orange; /* Color de fondo naranja */
 }
 
-#izquierda:hover, #derecha:hover{
-    background-color:#ffc000;
-
+img {
+    border-style: double; /* Estilo de borde doble */
+    border-radius: 0px; /* Radio del borde de 0px */
 }
 
-#nombrepj{
-color: red;
-text-align: center;
-font-size: 45px;
+#principal {
+    display: flex; /* Muestra el elemento como flexbox */
+    background-color: #ff6500; /* Color de fondo naranja oscuro */
+    margin: 0 -25px; /* Margen izquierdo y derecho de -25px (para compensar el margen negativo del cuerpo principal) */
+    z-index: 2; /* Establece el índice z en 2 */
 }
 
-#descripción{
-    width: 450px;
-    position: relative;
-    display: contents;
+#izquierda:hover, #derecha:hover {
+    background-color: #ffc000; /* Cambia el color de fondo a amarillo al pasar el mouse */
 }
 
-#descripción ::first-letter{
-    padding-left: 15px;
-    color:red;
-
+#nombrepj {
+    color: red; /* Color de texto rojo */
+    text-align: center; /* Alineación del texto al centro */
+    font-size: 45px; /* Tamaño de fuente de 45px */
 }
 
+#descripción {
+    width: 450px; /* Ancho de 450px */
+    position: relative; /* Posición relativa */
+    display: contents; /* Muestra el contenido del elemento */
+}
 
+#descripción ::first-letter {
+    padding-left: 15px; /* Espacio de relleno a la izquierda de la primera letra */
+    color: red; /* Color de la primera letra rojo */
+}
