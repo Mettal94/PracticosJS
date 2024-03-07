@@ -220,7 +220,7 @@ document.getElementById("nombre").addEventListener("keypress", function (e) {
     enviarPersonaje();
   }
 });
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
 // Función para finalizar la partida
 
 function terminarJuego() {
@@ -269,7 +269,7 @@ function terminarJuego() {
     window.location.reload();
   };
 }
-
+///////////////////////////////////////////////////////////////////////////////////////////////////
 // Función para validar y enviar el nombre del personaje
 
 function enviarPersonaje() {
@@ -290,7 +290,7 @@ function enviarPersonaje() {
     }, 2000);
   }
 }
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
 // Función para procesar el intento del usuario
 
 function introducirPersonaje() {
@@ -435,7 +435,7 @@ function introducirPersonaje() {
     terminarJuego();
   }
 }
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
 // Función que se ejecuta al agotar los intentos
 function adiosTen() {
   // **Agregar imagen a la página tras una espera de 3 segundos:**
@@ -461,7 +461,7 @@ function adiosTen() {
     }, 5000);
   }, 3000);
 }
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
 // Función para mostrar la ventana
 function mostrarVentana() {
   // Obtener una referencia al elemento <div> con ID "miDiv"
@@ -469,7 +469,7 @@ function mostrarVentana() {
   // Hacer visible el div
   div.style.display = "block";
 }
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
 // Función para cerrar la ventana
 function cerrarVentana() {
   // Obtener una referencia al elemento <div> con ID "miDiv"
