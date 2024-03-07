@@ -1,142 +1,159 @@
+/* Estilos para el contenedor principal del juego */
 #arena {
-    width: 512px;
-    height: 256px;
-    background-image: url("../img/arena/arenas/0.gif");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px;
-    border-color: black;
-    border-style: outset;
+    width: 512px; /* Anchura del contenedor */
+    height: 256px; /* Altura del contenedor */
+    background-image: url("../img/arena/arenas/0.gif"); /* Imagen de fondo */
+    background-size: cover; /* Ajuste de la imagen de fondo */
+    background-position: center; /* Posicionamiento de la imagen de fondo */
+    display: flex; /* Mostrar como un flex container */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+    border: 2px; /* Grosor del borde */
+    border-color: black; /* Color del borde */
+    border-style: outset; /* Estilo del borde */
 }
 
+/* Estilos para el contenedor de botones */
 .contenedor {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    justify-content: center;
+    display: flex; /* Mostrar como un flex container */
+    align-items: center; /* Centrar verticalmente el contenido */
+    align-content: center; /* Alinear el contenido en el eje de contenido */
+    align-self: center; /* Alinear el contenido respecto a sí mismo */
+    margin-top: 20px; /* Margen superior */
+    margin-bottom: 20px; /* Margen inferior */
+    justify-content: center; /* Centrar horizontalmente el contenido */
 }
 
+/* Estilos para los botones */
 button {
-    background-color: #fa8b2a;
-    color: #000000;
-    font-size: 16px;
-    font-weight: bolder;
-    text-shadow: -1px 1px white;
-    height: 42px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10%;
-    margin: 5px;
+    background-color: #fa8b2a; /* Color de fondo del botón */
+    color: #000000; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bolder; /* Grosor de la fuente */
+    text-shadow: -1px 1px white; /* Sombra de texto */
+    height: 42px; /* Altura del botón */
+    padding-left: 10px; /* Espaciado interno izquierdo */
+    padding-right: 10px; /* Espaciado interno derecho */
+    border-radius: 10%; /* Radio de borde */
+    margin: 5px; /* Margen externo */
 }
 
+/* Estilos para el estado deshabilitado del botón */
 button:disabled {
-    background-color: #9c6331;
+    background-color: #9c6331; /* Color de fondo cuando está deshabilitado */
 }
 
-button:enabled:hover{
-    background-color: rgba(255, 165, 0);
+/* Estilos para el estado activo del botón */
+button:enabled:hover {
+    background-color: rgba(255, 165, 0); /* Color de fondo al pasar el ratón */
 }
 
+/* Estilos para el estado deshabilitado del botón al pasar el ratón */
 button:disabled:hover {
-    background-color: #b8783f;
+    background-color: #b8783f; /* Color de fondo al pasar el ratón cuando está deshabilitado */
 }
 
+/* Estilos para el contenedor de estado */
 #status {
-    display: flex;
-    /* Para colocar los div en una misma línea */
-    justify-content: center;
-    text-shadow: -1px 1px white;
+    display: flex; /* Mostrar como un flex container */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    text-shadow: -1px 1px white; /* Sombra de texto */
 }
 
+/* Estilos para el estado 1 y estado 2 */
 #status1,
 #status2 {
-    background-color: #fa8b2a;
-    padding: 10px;
-    border-radius: 30px;
-    border-width: 3px;
-    border-style: solid;
-    margin-right: 70px;
-    margin-left: 70px;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 25px;
+    background-color: #fa8b2a; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 30px; /* Radio de borde */
+    border-width: 3px; /* Grosor del borde */
+    border-style: solid; /* Estilo del borde */
+    margin-right: 70px; /* Margen derecho */
+    margin-left: 70px; /* Margen izquierdo */
+    text-align: center; /* Alineación del texto */
+    font-weight: bolder; /* Grosor de la fuente */
+    font-size: 25px; /* Tamaño de fuente */
 }
 
+/* Estilos para los párrafos */
 p {
-    font-size: 18px;
-    margin: 0px;
+    font-size: 18px; /* Tamaño de fuente */
+    margin: 0px; /* Margen */
 }
 
+/* Estilos para los elementos con id vidagoku, kigoku, vidapiccolo y kipiccolo */
 #vidagoku,
 #kigoku,
 #vidapiccolo,
 #kipiccolo {
-    font-weight: normal;
+    font-weight: normal; /* Grosor de la fuente */
 }
 
-#ayuda, #volumen {
-    margin-top: -10px;
-    margin-bottom: -10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 22px;
-    height: 22px;
-    background-color: #fa8b2a;
-    border-radius: 30px;
-    border-width: 3px;
-    border-style: solid;
-    text-align: center;
+/* Estilos para los elementos con id ayuda y volumen */
+#ayuda,
+#volumen {
+    margin-top: -10px; /* Margen superior */
+    margin-bottom: -10px; /* Margen inferior */
+    margin-left: 10px; /* Margen izquierdo */
+    margin-right: 10px; /* Margen derecho */
+    width: 22px; /* Anchura */
+    height: 22px; /* Altura */
+    background-color: #fa8b2a; /* Color de fondo */
+    border-radius: 30px; /* Radio de borde */
+    border-width: 3px; /* Grosor del borde */
+    border-style: solid; /* Estilo del borde */
+    text-align: center; /* Alineación del texto */
 }
 
-#volumen:hover, #ayuda:hover {
-    shape-outside: margin-box;
-    cursor: default;
-background-color: rgba(255, 165, 0);
+/* Estilos para los elementos ayuda y volumen al pasar el ratón */
+#volumen:hover,
+#ayuda:hover {
+    shape-outside: margin-box; /* Estilo del cursor */
+    cursor: default; /* Tipo de cursor */
+    background-color: rgba(255, 165, 0); /* Color de fondo al pasar el ratón */
 }
 
+/* Estilos para la ventana flotante */
 .ventana-flotante {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /*para centrarla en la página*/
-    background-color: #fa8b2a;
-    padding: 20px;
-    display: none;
-    width: 40vw;
-    max-height: 40vw;
-    overflow-y: auto;
-    border-radius: 20px;
-    border: #c56613;
-    border-style: double;
-    border-width: 10px;
-    z-index: 9; /*arriba los elentos de la página*/
-  }
-  
-  .cerrar {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    cursor: pointer; /*cambia el cursor a la manito*/
-  }
+    position: fixed; /* Posicionamiento fijo */
+    top: 50%; /* Distancia desde la parte superior */
+    left: 50%; /* Distancia desde la parte izquierda */
+    transform: translate(-50%, -50%); /* Centrar la ventana en la página */
+    background-color: #fa8b2a; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    display: none; /* No mostrar por defecto */
+    width: 40vw; /* Anchura */
+    max-height: 40vw; /* Altura máxima */
+    overflow-y: auto; /* Permitir desplazamiento vertical */
+    border-radius: 20px; /* Radio de borde */
+    border: #c56613; /* Borde */
+    border-style: double; /* Estilo del borde */
+    border-width: 10px; /* Grosor del borde */
+    z-index: 9; /* Capa más alta */
+}
 
+/* Estilos para el botón de cerrar la ventana flotante */
+.cerrar {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 10px; /* Distancia desde la parte superior */
+    right: 10px; /* Distancia desde la parte derecha */
+    background: none; /* Fondo transparente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Tipo de cursor */
+}
+
+/* Media query para pantallas de hasta 550px */
 @media screen and (max-width:550px) {
-
+    /* Aplicar estilos a los elementos #arena y #pelea */
     #arena,
     #pelea {
-        width: 95%;
-        height: auto;
+        width: 95%; /* Anchura del 95% */
+        height: auto; /* Altura automática */
     }
 
-        .ventana-flotante {
-        width: 80vw;
-        max-height: 80vw;
-      }
+    /* Aplicar estilos a la ventana flotante */
+    .ventana-flotante {
+        width: 80vw; /* Anchura del 80% */
+        max-height: 80vw; /* Altura máxima del 80% */
+    }
 }
