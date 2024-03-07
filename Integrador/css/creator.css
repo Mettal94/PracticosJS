@@ -1,71 +1,71 @@
 #cac {
-    width: 168px;
-    height: 246px;
-    background-image: url("../img/cac/fondo.png");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px;
-    border-color: black;
-    border-style: outset;
+    width: 168px; /* Ancho de 168px */
+    height: 246px; /* Altura de 246px */
+    background-image: url("../img/cac/fondo.png"); /* Imagen de fondo */
+    background-size: cover; /* Tamaño de fondo cubierto */
+    background-position: center; /* Posición de fondo en el centro */
+    display: flex; /* Muestra el elemento como flexbox */
+    justify-content: center; /* Alinea el contenido horizontalmente en el centro */
+    align-items: center; /* Alinea el contenido verticalmente en el centro */
+    border: 2px; /* Borde de 2px */
+    border-color: black; /* Color de borde negro */
+    border-style: outset; /* Estilo de borde saliente */
 }
 
 .contenedor {
-    position: relative;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    justify-content: center;
+    position: relative; /* Posición relativa */
+    display: flex; /* Muestra el elemento como flexbox */
+    align-items: center; /* Alinea los elementos hijos verticalmente en el centro */
+    align-content: center; /* Alinea el contenido verticalmente en el centro */
+    align-self: center; /* Alinea el elemento verticalmente en el centro */
+    margin-top: 20px; /* Margen superior de 20px */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+    justify-content: center; /* Alinea los elementos hijos horizontalmente en el centro */
 }
 
-.contenedor h1{
-    margin-top: -5px;
-    margin-bottom: -5px;
+.contenedor h1 {
+    margin-top: -5px; /* Margen superior negativo de 5px */
+    margin-bottom: -5px; /* Margen inferior negativo de 5px */
 }
 
 .contenedor img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute; /* Posición absoluta */
+    top: 50%; /* Posiciona el elemento en la mitad superior del contenedor */
+    left: 50%; /* Posiciona el elemento en la mitad izquierda del contenedor */
+    transform: translate(-50%, -50%); /* Centra el elemento horizontal y verticalmente */
 }
 
 .linea {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    justify-content: center;
+    display: flex; /* Muestra el elemento como flexbox */
+    align-items: center; /* Alinea los elementos hijos verticalmente en el centro */
+    align-content: center; /* Alinea el contenido verticalmente en el centro */
+    align-self: center; /* Alinea el elemento verticalmente en el centro */
+    margin-top: 20px; /* Margen superior de 20px */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+    justify-content: center; /* Alinea los elementos hijos horizontalmente en el centro */
 }
 
-.linea span{
-    color: #000000;
-    font-size: 16px;
-    font-weight: bolder;
-    padding-left: 5px;
-    size: 200px;
+.linea span {
+    color: #000000; /* Color de texto negro */
+    font-size: 16px; /* Tamaño de fuente de 16px */
+    font-weight: bolder; /* Grosor de fuente más grueso */
+    padding-left: 5px; /* Espaciado a la izquierda de 5px */
+    size: 200px; /* Tamaño de 200px */
 }
 
 button {
-    background-color: #fa8b2a;
-    color: #000000;
-    font-size: 16px;
-    font-weight: bolder;
-    text-shadow: -1px 1px white;
-    height: 42px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10%;
-    margin: 5px;
+    background-color: #fa8b2a; /* Color de fondo naranja */
+    color: #000000; /* Color de texto negro */
+    font-size: 16px; /* Tamaño de fuente de 16px */
+    font-weight: bolder; /* Grosor de fuente más grueso */
+    text-shadow: -1px 1px white; /* Sombra de texto */
+    height: 42px; /* Altura de 42px */
+    padding-left: 10px; /* Espaciado interno a la izquierda de 10px */
+    padding-right: 10px; /* Espaciado interno a la derecha de 10px */
+    border-radius: 10%; /* Radio del borde de 10% */
+    margin: 5px; /* Margen de 5px */
 }
 
-button:enabled:hover{
-    background-color: rgba(255, 165, 0);
+button:enabled:hover {
+    background-color: rgba(255, 165, 0); /* Cambia el color de fondo al pasar el mouse */
 }
