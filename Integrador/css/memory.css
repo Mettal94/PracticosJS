@@ -1,120 +1,136 @@
+/* Definición de la fuente personalizada Saiyan Sans */
 @font-face {
   font-family: "Saiyan Sans";
   src: url("../font/SS.ttf") format("trueType");
 }
 
+/* Definición de la fuente personalizada Instruction */
 @font-face {
   font-family: "Instruction";
   src: url("../font/InstructionBold.otf") format(".otf");
 }
 
+/* Estilos para el título h1 */
 h1 {
-  text-align: center;
-  margin-bottom: 10px;
+  text-align: center; /* Alineación del texto al centro */
+  margin-bottom: 10px; /* Margen inferior de 10px */
 }
 
+/* Estilos para el título h2 */
 h2 {
-  color: #000000;
-  font-family: "Instruction";
-  font-size: 26px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 10%;
-  font-weight: bolder;
-  text-shadow: -1px 1px white;
-  margin: 5px;
+  color: #000000; /* Color del texto negro */
+  font-family: "Instruction"; /* Fuente personalizada Instruction */
+  font-size: 26px; /* Tamaño de fuente de 26px */
+  margin-top: 15px; /* Margen superior de 15px */
+  margin-bottom: 15px; /* Margen inferior de 15px */
+  padding-left: 10px; /* Relleno izquierdo de 10px */
+  padding-right: 10px; /* Relleno derecho de 10px */
+  border-radius: 10%; /* Radio del borde de 10% */
+  font-weight: bolder; /* Grosor de la fuente más negrita */
+  text-shadow: -1px 1px white; /* Sombra de texto */
+  margin: 5px; /* Margen de 5px */
 }
 
+/* Estilos para el contenedor principal */
 #contenedor {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  display: flex; /* Mostrar como flexbox */
+  align-items: center; /* Alinear los elementos verticalmente */
+  justify-content: center; /* Alinear los elementos horizontalmente */
 }
 
+/* Estilos para la parte 1 del contenedor */
 #parte1 {
-  background-color: rgb(255, 165, 0, 0.3);
-  padding: 0 10px 10px 10px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 15px;
-  border-radius: 20px;
+  background-color: rgb(255, 165, 0, 0.3); /* Color de fondo con transparencia */
+  padding: 0 10px 10px 10px; /* Relleno con valores específicos */
+  display: flex; /* Mostrar como flexbox */
+  flex-direction: column; /* Dirección de los elementos como columna */
+  margin-top: 15px; /* Margen superior de 15px */
+  border-radius: 20px; /* Radio del borde de 20px */
 }
 
+/* Estilos para la parte 2 del contenedor */
 #parte2 {
-  display: flex;
-  height: 100%;
-  padding: 20px 20px 20px 20px;
-  margin-right: 0px;
-  flex-direction: column;
-  align-self: center;
+  display: flex; /* Mostrar como flexbox */
+  height: 100%; /* Altura del 100% */
+  padding: 20px 20px 20px 20px; /* Relleno con valores específicos */
+  margin-right: 0px; /* Margen derecho de 0px */
+  flex-direction: column; /* Dirección de los elementos como columna */
+  align-self: center; /* Alinear el elemento en sí mismo */
 }
 
+/* Estilos para los botones carta */
 button.carta {
-  background-image: url(../img/memorama/card.png);
-  background-size: cover;
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-  cursor: pointer;
-  border-radius: 10px;
+  background-image: url(../img/memorama/card.png); /* Imagen de fondo para el botón */
+  background-size: cover; /* Tamaño de la imagen de fondo */
+  width: 100px; /* Ancho del botón de 100px */
+  height: 100px; /* Altura del botón de 100px */
+  padding: 5px; /* Relleno de 5px */
+  cursor: pointer; /* Cambio de cursor al pasar el ratón */
+  border-radius: 10px; /* Radio del borde de 10px */
 }
 
+/* Estilos para el bloque de estadísticas */
 .estadisticas {
-  border: 3px solid #fa8b2a;
-  width: 250px;
-  border-radius: 10px;
-  padding: 10px 20px;
-  box-sizing: border-box;
+  border: 3px solid #fa8b2a; /* Borde sólido de 3px con color */
+  width: 250px; /* Ancho de 250px */
+  border-radius: 10px; /* Radio del borde de 10px */
+  padding: 10px 20px; /* Relleno con valores específicos */
+  box-sizing: border-box; /* Caja de tamaño borde */
 }
 
+/* Estilos para el botón de inicio */
 #iniciar {
-  background-color: #fa8b2a;
-  color: #000000;
-  width: 200px;
-  height: 50px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 30px;
-  font-family: "Instruction";
-  cursor: pointer;
-  border-radius: 10%;
-  font-weight: bolder;
-  text-shadow: -1px 1px white;
-  margin: 5px;
+  background-color: #fa8b2a; /* Color de fondo naranja */
+  color: #000000; /* Color del texto negro */
+  width: 200px; /* Ancho de 200px */
+  height: 50px; /* Altura de 50px */
+  padding-left: 10px; /* Relleno izquierdo de 10px */
+  padding-right: 10px; /* Relleno derecho de 10px */
+  font-size: 30px; /* Tamaño de fuente de 30px */
+  font-family: "Instruction"; /* Fuente personalizada Instruction */
+  cursor: pointer; /* Cambio de cursor al pasar el ratón */
+  border-radius: 10%; /* Radio del borde de 10% */
+  font-weight: bolder; /* Grosor de la fuente más negrita */
+  text-shadow: -1px 1px white; /* Sombra de texto */
+  margin: 5px; /* Margen de 5px */
 }
 
+/* Estilos para el estado hover del botón de inicio habilitado */
 button#iniciar:enabled:hover {
-  background-color: rgba(255, 165, 0);
+  background-color: rgba(255, 165, 0); /* Cambio de color de fondo en estado hover */
 }
 
+/* Estilos para el estado hover de los botones carta habilitados */
 button.carta:enabled:hover {
-  opacity: 0.7;
+  opacity: 0.7; /* Opacidad reducida en estado hover */
 }
 
+/* Estilos para el botón de inicio deshabilitado */
 #iniciar.disabled {
-  background-color: #9c6331;
-  cursor: not-allowed;
+  background-color: #9c6331; /* Color de fondo marrón */
+  cursor: not-allowed; /* Cursor no permitido */
 }
 
+/* Estilos para los botones carta deshabilitados */
 button.carta.disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
+  opacity: 0.5; /* Opacidad reducida */
+  cursor: not-allowed; /* Cursor no permitido */
 }
 
+/* Estilos para elementos específicos dentro de h2 */
 h2 #record,
 #contador_aciertos,
 #temporizador,
 #contador_movimientos {
-  color: #000000;
+  color: #000000; /* Color del texto negro */
 }
 
+/* Estilos para el temporizador con poco tiempo */
 span#temporizador.poco_tiempo {
-  color: #fbb224;
+  color: #fbb224; /* Color del texto naranja */
 }
 
+/* Estilos para el temporizador en los últimos segundos */
 span#temporizador.ultimos_segundos {
-  color: red;
+  color: red; /* Color del texto rojo */
 }
