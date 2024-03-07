@@ -1,59 +1,67 @@
+/* Definición de la fuente personalizada Saiyan Sans */
 @font-face {
   font-family: "Saiyan Sans";
   src: url("../font/SS.ttf") format("trueType");
 }
 
+/* Definición de la fuente personalizada Instruction */
 @font-face {
   font-family: "Instruction";
   src: url("../font/InstructionBold.otf") format(".otf");
 }
 
+/* Estilos para el contenedor de mensajes */
 .mensaje {
-  display: flexbox;
-  align-content: center;
-  align-self: center;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 100%;
+  display: flexbox; /* Tipo de display incorrecto. Debería ser "flex" */
+  align-content: center; /* Alinea el contenido en el eje secundario */
+  align-self: center; /* Alinea el elemento en sí mismo en el eje secundario */
+  align-items: center; /* Alinea los elementos secundarios verticalmente */
+  margin-top: 20px; /* Margen superior de 20px */
+  margin-bottom: 20px; /* Margen inferior de 20px */
+  width: 100%; /* Ancho del 100% */
 }
 
+/* Estilos para el título h2 */
 h2 {
-  font-family: "Saiyan Sans";
-  color: red;
-  text-align: center;
-  font-size: 38px;
-  font-weight: lighter;
-  font-stretch: extra-expanded;
-  font-style: italic;
-  margin-bottom: 15px;
+  font-family: "Saiyan Sans"; /* Fuente personalizada Saiyan Sans */
+  color: red; /* Color del texto rojo */
+  text-align: center; /* Alineación del texto centrada */
+  font-size: 38px; /* Tamaño de fuente de 38px */
+  font-weight: lighter; /* Grosor de la fuente más ligero */
+  font-stretch: extra-expanded; /* Estiramiento extra ampliado de la fuente */
+  font-style: italic; /* Estilo de la fuente en cursiva */
+  margin-bottom: 15px; /* Margen inferior de 15px */
 }
 
+/* Estilos para las imágenes */
 img {
-  width: 50%;
-  height: auto;
-  border: 2px solid black;
+  width: 50%; /* Ancho del 50% del contenedor padre */
+  height: auto; /* Altura automática para mantener la proporción */
+  border: 2px solid black; /* Borde sólido de 2px de color negro */
 }
 
+/* Estilos para los botones */
 button {
-  background-color: #fa8b2a;
-  color: #000000;
-  font-size: 16px;
-  font-weight: bolder;
-  text-shadow: -1px 1px white;
-  height: 42px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 10%;
-  margin: 5px;
+  background-color: #fa8b2a; /* Color de fondo naranja */
+  color: #000000; /* Color del texto negro */
+  font-size: 16px; /* Tamaño de fuente de 16px */
+  font-weight: bolder; /* Grosor de la fuente más negrita */
+  text-shadow: -1px 1px white; /* Sombra de texto */
+  height: 42px; /* Altura del botón de 42px */
+  padding-left: 10px; /* Relleno izquierdo de 10px */
+  padding-right: 10px; /* Relleno derecho de 10px */
+  border-radius: 10%; /* Radio del borde de 10% */
+  margin: 5px; /* Margen de 5px */
 }
 
+/* Estilos para el estado hover de los botones habilitados */
 button:enabled:hover {
-  background-color: rgba(255, 165, 0);
+  background-color: rgba(255, 165, 0); /* Cambio de color de fondo en estado hover */
 }
 
+/* Estilos para imágenes en dispositivos con un ancho máximo de 600px */
 @media screen and (max-width:600px) {
   img {
-    width: 80%;
+    width: 80%; /* Ancho del 80% del contenedor padre */
   }
 }
